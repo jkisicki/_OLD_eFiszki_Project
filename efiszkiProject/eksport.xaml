@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="efiszkiProject.eksport"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:efiszkiProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Viewbox>
+        <Grid Height="768" Width="1366" Background="Black">
+            <ComboBox x:Name="comboboxdostepnebazy" HorizontalAlignment="Left" Margin="439,638,0,0" VerticalAlignment="Top" Width="515" Height="59" SelectionChanged="comboboxdostepnebazy_SelectionChanged"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Style="{StaticResource BackButtonStyle}" Click="Button_Click_1"/>
+            <Button x:Name="buttondodajnoweslowkowybranabaza" Content="Button" HorizontalAlignment="Left" Margin="968.724,644.413,0,0" VerticalAlignment="Top" Style="{StaticResource BackButtonStyle}" RenderTransformOrigin="0.322,0.594" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="47.991" Width="50.88" Click="Button_Click_2">
+                <Button.RenderTransform>
+                    <CompositeTransform Rotation="179.232" TranslateX="18.052" TranslateY="-9.143"/>
+                </Button.RenderTransform>
+            </Button>
+            <TextBox x:Uid="eksporttytul" HorizontalAlignment="Left" Margin="184,61,0,0" TextWrapping="Wrap" Text="tytulTT" VerticalAlignment="Top" Width="964" Height="81" Background="Black" BorderBrush="Black" Foreground="White" IsReadOnly="True" IsHitTestVisible="False" FontSize="40"/>
+            <TextBox x:Uid="OgolneWybierzBaze" HorizontalAlignment="Left" Margin="439,601,0,0" TextWrapping="Wrap" Text="wybierzTT" VerticalAlignment="Top" Width="515" Background="Black" Foreground="White" TextAlignment="Center" IsReadOnly="True" BorderBrush="{x:Null}"/>
+            <TextBox x:Name="jezyk1" HorizontalAlignment="Left" Margin="588,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="58" Width="326" TextAlignment="Center" FontSize="24"/>
+            <TextBox x:Name="jezyk2" HorizontalAlignment="Left" Margin="588,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="58" Width="326" TextAlignment="Center" FontSize="24"/>
+            <TextBox x:Name="userinfo" HorizontalAlignment="Left" Margin="588,374,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="52" Width="326" TextAlignment="Center" FontSize="24"/>
+            <TextBox x:Uid="eksportautor" HorizontalAlignment="Left" Margin="399,374,0,0" TextWrapping="Wrap" Text="aut" VerticalAlignment="Top" Width="157" Height="52" TextAlignment="Center" FontSize="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" IsReadOnly="True"/>
+            <TextBox x:Uid="eksportjezyk2" HorizontalAlignment="Left" Margin="399,284,0,0" TextWrapping="Wrap" Text="lan2" VerticalAlignment="Top" Width="157" Height="52" TextAlignment="Center" FontSize="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" IsReadOnly="True"/>
+            <TextBox x:Uid="eksportjezyk1" HorizontalAlignment="Left" Margin="399,190,0,0" TextWrapping="Wrap" Text="lan1" VerticalAlignment="Top" Width="157" Height="58" TextAlignment="Center" FontSize="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" IsReadOnly="True"/>
+            <TextBox x:Uid="eksportsendto" HorizontalAlignment="Left" Margin="399,455,0,0" TextWrapping="Wrap" Text="aut" VerticalAlignment="Top" Width="157" Height="52" TextAlignment="Center" FontSize="20" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" IsReadOnly="True"/>
+            <TextBox x:Uid="friendmeiltoenter" x:Name="friendmeil" HorizontalAlignment="Left" Margin="588,512,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="52" Width="326" TextAlignment="Center" FontSize="24"/>
+            <RadioButton x:Name="radio1" x:Uid="eksportsendtofriend" Content="RadioButton" HorizontalAlignment="Left" Margin="588,455,0,0" VerticalAlignment="Top" Height="40" Checked="RadioButton_Checked_1"/>
+            <RadioButton x:Name="radio2" x:Uid="eksportsendtoauthor" Content="RadioButton" HorizontalAlignment="Left" Margin="762,455,0,0" VerticalAlignment="Top" Height="40" Width="156" Checked="RadioButton_Checked_2"/>
+
+        </Grid>
+    </Viewbox>
+</Page>

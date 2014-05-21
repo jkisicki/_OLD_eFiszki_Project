@@ -1,0 +1,26 @@
+﻿<Page
+    x:Class="efiszkiProject.egzamin1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:efiszkiProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Viewbox>
+        <Grid Height="768" Width="1366" Background="Black">
+            <TextBox x:Uid="egzaminTytul" HorizontalAlignment="Left" Margin="184,72,0,0" TextWrapping="Wrap" Text="tytulTT" VerticalAlignment="Top" Width="964" Height="81" Background="Black" BorderBrush="Black" Foreground="White" IsReadOnly="True" IsHitTestVisible="False" FontSize="40"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Style="{StaticResource BackButtonStyle}" Click="Button_Click_1"/>
+            <ComboBox x:Name="comboboxdostepnebazy" HorizontalAlignment="Left" Margin="444,339,0,0" VerticalAlignment="Top" Width="470" Height="64" SelectionChanged="comboboxdostepnebazy_SelectionChanged"/>
+            <Button x:Name="buttondodajnoweslowkowybranabaza" Content="Button" HorizontalAlignment="Left" Margin="955.918,347.735,0,0" VerticalAlignment="Top" Style="{StaticResource BackButtonStyle}" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="47.991" Width="50.88" Click="Button_Click_2">
+                <Button.RenderTransform>
+                    <CompositeTransform Rotation="179.232"/>
+                </Button.RenderTransform>
+            </Button>
+            <TextBlock x:Name="egzamin1zamalokomunikat" x:Uid="egzamin1zamaloslowek" HorizontalAlignment="Left" Margin="221,494,0,0" TextWrapping="Wrap" Text="tt" VerticalAlignment="Top" Height="29" Width="81" Foreground="{x:Null}" IsTapEnabled="False" IsHitTestVisible="False" Visibility="Collapsed"/>
+            <RadioButton x:Uid="radiobuttonprocenty" x:Name="oceny1" Content="" HorizontalAlignment="Left" Margin="565,543,0,0" VerticalAlignment="Top" IsChecked="False" Checked="oceny1_Checked"/>
+            <RadioButton x:Uid="radiobuttonpolska" x:Name="oceny2" Content="" HorizontalAlignment="Left" Margin="565,604,0,0" VerticalAlignment="Top" Checked="oceny2_Checked"/>
+            <TextBox x:Uid="systemocenianiainfo" HorizontalAlignment="Left" Margin="565,461,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="228" IsReadOnly="True" AcceptsReturn="True" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" Height="62" FontSize="20"/>
+        </Grid>
+    </Viewbox>
+</Page>

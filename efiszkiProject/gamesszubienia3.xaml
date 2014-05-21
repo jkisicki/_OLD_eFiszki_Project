@@ -1,0 +1,21 @@
+﻿<Page
+    x:Class="efiszkiProject.gamesszubienia3"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:efiszkiProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Viewbox>
+        <Grid Background="Black" Height="768" Width="1366">
+            <TextBox x:Name="wyniktext"  HorizontalAlignment="Left" Margin="133,158,0,0" TextWrapping="Wrap" Text="wynik&#xD;&#xA;" VerticalAlignment="Top" Height="212" Width="1106" Background="Black" IsReadOnly="True" TextAlignment="Center" FontSize="100" Foreground="White" BorderBrush="{x:Null}"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="690,858,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="slowko" x:Uid="gamesszubienica3slowko" HorizontalAlignment="Left" Margin="133,375,0,0" TextWrapping="Wrap" Text="TT&#xD;&#xA;" VerticalAlignment="Top" Height="152" Width="1106" Background="Black" IsReadOnly="True" TextAlignment="Center" FontSize="65" Foreground="White" BorderBrush="{x:Null}"/>
+            <TextBox x:Name="wintext" x:Uid="gamesszubienica3win" HorizontalAlignment="Left" Margin="133,681,0,0" TextWrapping="Wrap" Text="wynik&#xA;" VerticalAlignment="Top" Height="58" Width="158" Background="Black" IsReadOnly="True" TextAlignment="Center" FontSize="100" Foreground="{x:Null}" BorderBrush="{x:Null}"/>
+            <TextBox x:Name="losetext" x:Uid="gamesszubienica3lose" HorizontalAlignment="Left" Margin="374,681,0,0" TextWrapping="Wrap" Text="wynik&#xA;" VerticalAlignment="Top" Height="58" Width="132" Background="Black" IsReadOnly="True" TextAlignment="Center" FontSize="100" Foreground="{x:Null}" BorderBrush="{x:Null}"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Style="{StaticResource BackButtonStyle}" Click="Button_Click_1"/>
+
+        </Grid>
+    </Viewbox>
+</Page>

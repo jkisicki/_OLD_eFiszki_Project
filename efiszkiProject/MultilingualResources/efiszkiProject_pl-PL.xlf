@@ -6,9 +6,509 @@
     </header>
     <body>
       <group id="Resources">
-        <trans-unit translate="yes" id="Resources\LosujSlowko\Content" xml:space="preserve">
-          <source>Random</source>
-          <target state="translated">Losuj</target>
+        <trans-unit translate="yes" id="Resources\aktualnabaza\Text" xml:space="preserve">
+          <source>Currently selected category:</source>
+          <target state="new">Currently selected category:</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\ButtonLosuj\Content" xml:space="preserve">
+          <source>
+
+
+Random!</source>
+          <target state="new">
+
+
+Random!</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\ButtonNaukaSlowek\Content" xml:space="preserve">
+          <source>
+
+
+
+
+
+
+
+
+
+Random %%amp; Guess</source>
+          <target state="new">
+
+
+
+
+
+
+
+
+
+Random %%amp; Guess</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\Pokazlitery\Text" xml:space="preserve">
+          <source>Show letter</source>
+          <target state="new">Show letter</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\Twojaodpowiedz\Text" xml:space="preserve">
+          <source>Your answer:</source>
+          <target state="new">Your answer:</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\procentodp\Text" xml:space="preserve">
+          <source>Percentage of good answers:</source>
+          <target state="new">Percentage of good answers:</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\statystykislowka\Text" xml:space="preserve">
+          <source>Word statistics:</source>
+          <target state="new">Word statistics:</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\buttonDodajSlowko\Content" xml:space="preserve">
+          <source>
+
+
+
+
+
+Add new word</source>
+          <target state="new">
+
+
+
+
+
+Add new word</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\buttondeleteword\Content" xml:space="preserve">
+          <source>
+
+
+
+
+
+Delete words</source>
+          <target state="new">
+
+
+
+
+
+Delete words</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\buttondodajbaze\Content" xml:space="preserve">
+          <source>
+
+
+
+
+
+Add new category</source>
+          <target state="new">
+
+
+
+
+
+Add new category</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\buttonusunbaze\Content" xml:space="preserve">
+          <source>
+
+
+
+
+
+Delete category</source>
+          <target state="new">
+
+
+
+
+
+Delete category</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\buttonimport\Content" xml:space="preserve">
+          <source>
+
+
+
+
+
+Import category</source>
+          <target state="new">
+
+
+
+
+
+Import category</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\buttoneksport\Content" xml:space="preserve">
+          <source>
+
+
+
+
+
+Export category</source>
+          <target state="new">
+
+
+
+
+
+Export category</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\podpowiedz_dodaj\Text" xml:space="preserve">
+          <source>Add hint, for eg. for eg.: hint for 'Screen' -&gt; 'You watch movie on PC's s...' </source>
+          <target state="new">Add hint, for eg. for eg.: hint for 'Screen' -&gt; 'You watch movie on PC's s...' </target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\kontekst_dodaj\Text" xml:space="preserve">
+          <source>Add contex, for eg.:  'Mouse' in contex PC Mouse</source>
+          <target state="new">Add contex, for eg.:  'Mouse' in contex PC Mouse</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\slowkoen_dodaj\Text" xml:space="preserve">
+          <source>Enter translation:</source>
+          <target state="new">Enter translation:</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\slowkopl_dodaj\Text" xml:space="preserve">
+          <source>Enter a word in your language:</source>
+          <target state="new">Enter a word in your language:</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\zarzadzajbazami\Content" xml:space="preserve">
+          <source>
+
+
+
+
+
+
+
+
+
+Manage Your categories</source>
+          <target state="new">
+
+
+
+
+
+
+
+
+
+Manage Your categories</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\deleteword\Text" xml:space="preserve">
+          <source>remove</source>
+          <target state="new">remove</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\buttongame\Content" xml:space="preserve">
+          <source>
+
+
+
+
+
+
+
+
+
+Play and Learn</source>
+          <target state="new">
+
+
+
+
+
+
+
+
+
+Play and Learn</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\buttonegzamin\Content" xml:space="preserve">
+          <source>
+
+
+
+
+
+
+
+
+
+Exam</source>
+          <target state="new">
+
+
+
+
+
+
+
+
+
+Exam</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\zarzadzajbazamiTytul\Text" xml:space="preserve">
+          <source>Manage Your categories</source>
+          <target state="new">Manage Your categories</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\buttonabout\Content" xml:space="preserve">
+          <source>
+
+
+
+About </source>
+          <target state="new">
+
+
+
+About </target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\buttontranslate\Content" xml:space="preserve">
+          <source>
+
+
+
+Help us with translate</source>
+          <target state="new">
+
+
+
+Help us with translate</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\Buttonzacznijegzamin\Content" xml:space="preserve">
+          <source>Start exam</source>
+          <target state="new">Start exam</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\nowyegzamin\Content" xml:space="preserve">
+          <source>Start new exam</source>
+          <target state="new">Start new exam</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\opisegzaminu\Text" xml:space="preserve">
+          <source>- god answer in section one - 2 pkt,
+- god answer in section two - 1 pkt,
+- the total number of points - 30 pkt.
+- to pass the exam - 30% of points (9 pkt)</source>
+          <target state="new">- god answer in section one - 2 pkt,
+- god answer in section two - 1 pkt,
+- the total number of points - 30 pkt.
+- to pass the exam - 30% of points (9 pkt)</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\wynikegaminu\Text" xml:space="preserve">
+          <source>Result:</source>
+          <target state="new">Result:</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\zakonczegzamin\Content" xml:space="preserve">
+          <source>End the exam</source>
+          <target state="new">End the exam</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\egzaminTytul\Text" xml:space="preserve">
+          <source>Exam</source>
+          <target state="new">Exam</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\dodajbazeTytul_dodajslowko\Text" xml:space="preserve">
+          <source>Add new words to category</source>
+          <target state="new">Add new words to category</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\dodajslowkoTytul\Text" xml:space="preserve">
+          <source>Add new words</source>
+          <target state="new">Add new words</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\OgolneWybierzBaze\Text" xml:space="preserve">
+          <source>Select category:</source>
+          <target state="new">Select category:</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\usunbazeTytul\Text" xml:space="preserve">
+          <source>Delete category</source>
+          <target state="new">Delete category</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\usunslowkoTytul\Text" xml:space="preserve">
+          <source>Delete words</source>
+          <target state="new">Delete words</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\gamesTytul\Text" xml:space="preserve">
+          <source>Games</source>
+          <target state="new">Games</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\gamesstandardlearning2start\Content" xml:space="preserve">
+          <source>Start learning</source>
+          <target state="new">Start learning</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\gameswiecejgier\Text" xml:space="preserve">
+          <source>More games commin soon! </source>
+          <target state="new">More games commin soon! </target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\egzamin1zamaloslowek\Text" xml:space="preserve">
+          <source>This category have not enough words. Minimum number of words is 25.</source>
+          <target state="new">This category have not enough words. Minimum number of words is 25.</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\nauka1zamaloslowek\Text" xml:space="preserve">
+          <source>This category have not enough words. Minimum number of words is 1.</source>
+          <target state="new">This category have not enough words. Minimum number of words is 1.</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\naukaslowek1toglledynamicsave\Header" xml:space="preserve">
+          <source>Dynamic Save</source>
+          <target state="new">Dynamic Save</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\naukaslowek1infodynamicsave\Text" xml:space="preserve">
+          <source>Dynamic Save
+- (Default) ON: Your results are saved after each answer.
+- OFF: Your results are saved when you press "back button". It's better for slower computer (When "Random" and "Check answer" is working to slowly).
+Caution! If You close the program before saving result, all will be lost!</source>
+          <target state="new">Dynamic Save
+- (Default) ON: Your results are saved after each answer.
+- OFF: Your results are saved when you press "back button". It's better for slower computer (When "Random" and "Check answer" is working to slowly).
+Caution! If You close the program before saving result, all will be lost!</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\naukatytul\Text" xml:space="preserve">
+          <source>Random %%amp; Guess</source>
+          <target state="new">Random %%amp; Guess</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\dodajslowkobutton\Content" xml:space="preserve">
+          <source>Add</source>
+          <target state="new">Add</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\toggleentertocheck\Header" xml:space="preserve">
+          <source>Enter to check %%amp; Random</source>
+          <target state="new">Enter to check %%amp; Random</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\togglestatistic\Header" xml:space="preserve">
+          <source>Statistic</source>
+          <target state="new">Statistic</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\naukaslowek1infostatistic\Text" xml:space="preserve">
+          <source>- Enable/Disable statistic</source>
+          <target state="new">- Enable/Disable statistic</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\radiobuttonprocenty\Content" xml:space="preserve">
+          <source>Percentages</source>
+          <target state="new">Percentages</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\systemocenianiainfo\Text" xml:space="preserve">
+          <source>Rating system:</source>
+          <target state="new">Rating system:</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\gamesszubieniaca\Text" xml:space="preserve">
+          <source>Games - Gallows</source>
+          <target state="new">Games - Gallows</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\gamesszubienica3win\Text" xml:space="preserve">
+          <source>You Win!</source>
+          <target state="new">You Win!</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\eksporttytul\Text" xml:space="preserve">
+          <source>Export your category</source>
+          <target state="new">Export your category</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\friendmeiltoenter\Text" xml:space="preserve">
+          <source>Please, enter a email addres</source>
+          <target state="new">Please, enter a email addres</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\togglesmartrandom\Header" xml:space="preserve">
+          <source>Smart random</source>
+          <target state="new">Smart random</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\eksportjezyk2\Text" xml:space="preserve">
+          <source>Translate to:</source>
+          <target state="new">Translate to:</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\eksportsendtofriend\Content" xml:space="preserve">
+          <source>Friend</source>
+          <target state="new">Friend</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\eksportsendtoauthor\Content" xml:space="preserve">
+          <source>Application author</source>
+          <target state="new">Application author</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\eksportsendto\Text" xml:space="preserve">
+          <source>Send to:</source>
+          <target state="new">Send to:</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\eksportjezyk1\Text" xml:space="preserve">
+          <source>You language:</source>
+          <target state="new">You language:</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\eksportautor\Text" xml:space="preserve">
+          <source>Author:</source>
+          <target state="new">Author:</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\gamesszubienica3lose\Text" xml:space="preserve">
+          <source>You Lose :-(</source>
+          <target state="new">You Lose :-(</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\radiobuttonpolska\Content" xml:space="preserve">
+          <source>From 1 to 5</source>
+          <target state="new">From 1 to 5</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\naukaslowek1infoentertorandom\Text" xml:space="preserve">
+          <source>If enabled:
+- When type answer, press "Enter" to check and press "Enter" one more time to radom new words. It's better for physical keyboard.</source>
+          <target state="new">If enabled:
+- When type answer, press "Enter" to check and press "Enter" one more time to radom new words. It's better for physical keyboard.</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\gamesstandardlearning\Text" xml:space="preserve">
+          <source>Games - standard learning</source>
+          <target state="new">Games - standard learning</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\dodajbazeTytul\Text" xml:space="preserve">
+          <source>Add new category</source>
+          <target state="new">Add new category</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\deletefrom\Text" xml:space="preserve">
+          <source>From</source>
+          <target state="new">From</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\komunikatzakrotkanazwa\Text" xml:space="preserve">
+          <source>The name is to short</source>
+          <target state="new">The name is to short</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\dodajBazeWybierzBaze\Text" xml:space="preserve">
+          <source>Type the name of the new categories:</source>
+          <target state="new">Type the name of the new categories:</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\komunikatnazwazastrzezona\Text" xml:space="preserve">
+          <source>This name is reserved</source>
+          <target state="new">This name is reserved</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\komunikatbazaistnieje\Text" xml:space="preserve">
+          <source>This name of category is existing</source>
+          <target state="new">This name of category is existing</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\iloscodpowiedzi\Text" xml:space="preserve">
+          <source>Number of answer:</source>
+          <target state="new">Number of answer:</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\iloscdobrychodpowiedzi\Text" xml:space="preserve">
+          <source>Number of correct answer:</source>
+          <target state="new">Number of correct answer:</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\Buttonsprawdz\Content" xml:space="preserve">
+          <source>Check</source>
+          <target state="new">Check</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\switchpodpowiedz\Header" xml:space="preserve">
+          <source>Show hint</source>
+          <target state="new">Show hint</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\switchkontekst\Header" xml:space="preserve">
+          <source>Show contex</source>
+          <target state="new">Show contex</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\statystykiuzytkownika\Text" xml:space="preserve">
+          <source>User statistics:</source>
+          <target state="new">User statistics:</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\Podpowiedz\Text" xml:space="preserve">
+          <source>Hint</source>
+          <target state="new">Hint</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\kontekst\Text" xml:space="preserve">
+          <source>Context</source>
+          <target state="new">Context</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\passa\Text" xml:space="preserve">
+          <source>Pass:</source>
+          <target state="new">Pass:</target>
         </trans-unit>
       </group>
     </body>

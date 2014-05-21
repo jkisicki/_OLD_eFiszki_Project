@@ -1,0 +1,61 @@
+﻿<Page
+    x:Class="efiszkiProject.egzamin2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:efiszkiProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Viewbox Margin="1,-8,-1,8" >
+        <Grid Height="768" Width="1366" Background="Black">
+            <TextBox x:Name="sl0" HorizontalAlignment="Left" Margin="307,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True" IsHitTestVisible="False" Background="Black" Foreground="White"/>
+            <TextBox x:Name="sl1" HorizontalAlignment="Left" Margin="307,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.488,0.622" Height="40" Width="250" IsReadOnly="True" IsHitTestVisible="False" Background="Black" Foreground="White"/>
+            <TextBox x:Name="sl2" HorizontalAlignment="Left" Margin="307,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True" IsHitTestVisible="False" Background="Black" Foreground="White"/>
+            <TextBox x:Name="sl3" HorizontalAlignment="Left" Margin="307,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True" IsHitTestVisible="False" Background="Black" Foreground="White"/>
+            <TextBox x:Name="sl4" HorizontalAlignment="Left" Margin="307,381,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True" IsHitTestVisible="False" Background="Black" Foreground="White"/>
+            <TextBox x:Name="sl5" HorizontalAlignment="Left" Margin="307,426,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.611,0.391" Height="40" Width="250" IsReadOnly="True" IsHitTestVisible="False" Background="Black" Foreground="White"/>
+            <TextBox x:Name="sl6" HorizontalAlignment="Left" Margin="307,471,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True" IsHitTestVisible="False" Background="Black" Foreground="White"/>
+            <TextBox x:Name="sl7" HorizontalAlignment="Left" Margin="307,516,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" RenderTransformOrigin="0.469,0.523" Width="250" IsReadOnly="True" IsHitTestVisible="False" Background="Black" Foreground="White"/>
+            <TextBox x:Name="sl8" HorizontalAlignment="Left" Margin="307,561,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True" IsHitTestVisible="False" Background="Black" Foreground="White"/>
+            <TextBox x:Name="sl9" HorizontalAlignment="Left" Margin="307,606,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True" IsHitTestVisible="False" Background="Black" Foreground="White"/>
+            <TextBox x:Name="sl10" HorizontalAlignment="Left" Margin="844,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True" IsHitTestVisible="False" Background="Black" Foreground="White"/>
+            <TextBox x:Name="sl11" HorizontalAlignment="Left" Margin="844,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True" IsHitTestVisible="False" Background="Black" Foreground="White"/>
+            <TextBox x:Name="sl12" HorizontalAlignment="Left" Margin="844,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True" IsHitTestVisible="False" Background="Black" Foreground="White"/>
+            <TextBox x:Name="sn0" HorizontalAlignment="Left" Margin="562,201,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True"/>
+            <TextBox x:Name="sn1" HorizontalAlignment="Left" Margin="562,246,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.488,0.622" Height="40" Width="250" IsReadOnly="True"/>
+            <TextBox x:Name="sn2" HorizontalAlignment="Left" Margin="562,291,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True"/>
+            <TextBox x:Name="sn3" HorizontalAlignment="Left" Margin="562,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True"/>
+            <TextBox x:Name="sn4" HorizontalAlignment="Left" Margin="562,381,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True"/>
+            <TextBox x:Name="sn5" HorizontalAlignment="Left" Margin="562,426,0,0" TextWrapping="Wrap" VerticalAlignment="Top" RenderTransformOrigin="0.611,0.391" Height="40" Width="250" IsReadOnly="True"/>
+            <TextBox x:Name="sn6" HorizontalAlignment="Left" Margin="562,471,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True"/>
+            <TextBox x:Name="sn7" HorizontalAlignment="Left" Margin="562,516,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" RenderTransformOrigin="0.469,0.523" Width="250" IsReadOnly="True"/>
+            <TextBox x:Name="sn8" HorizontalAlignment="Left" Margin="562,561,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True"/>
+            <TextBox x:Name="sn9" HorizontalAlignment="Left" Margin="562,606,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True"/>
+            <ComboBox x:Name="csn10" HorizontalAlignment="Left" Margin="1099,201,0,0" VerticalAlignment="Top" Width="250" Height="40"/>
+            <ComboBox x:Name="csn11" HorizontalAlignment="Left" Margin="1099,246,0,0" VerticalAlignment="Top" Width="250" Height="40"/>
+            <ComboBox x:Name="csn12" HorizontalAlignment="Left" Margin="1099,291,0,0" VerticalAlignment="Top" Width="250" Height="40"/>
+            <ComboBox x:Name="csn13" HorizontalAlignment="Left" Margin="1099,336,0,0" VerticalAlignment="Top" Width="250" Height="40"/>
+            <ComboBox x:Name="csn14" HorizontalAlignment="Left" Margin="1099,381,0,0" VerticalAlignment="Top" Width="250" Height="40"/>
+            <ComboBox x:Name="csn15" HorizontalAlignment="Left" Margin="1099,426,0,0" VerticalAlignment="Top" Width="250" Height="40"/>
+            <ComboBox x:Name="csn16" HorizontalAlignment="Left" Margin="1099,471,0,0" VerticalAlignment="Top" Width="250" Height="40"/>
+            <ComboBox x:Name="csn17" HorizontalAlignment="Left" Margin="1099,516,0,0" VerticalAlignment="Top" Width="250" Height="40"/>
+            <ComboBox x:Name="csn18" HorizontalAlignment="Left" Margin="1099,561,0,0" VerticalAlignment="Top" Width="250" Height="40"/>
+            <ComboBox x:Name="csn19" HorizontalAlignment="Left" Margin="1099,606,0,0" VerticalAlignment="Top" Width="250" Height="40"/>
+            <Button x:Uid="zakonczegzamin" x:Name="Sprawdz" Content="sprawdzTT" HorizontalAlignment="Left" Margin="562,700,0,0" VerticalAlignment="Top" Height="58" Width="250" Click="Button_Click_2" FontSize="14.667"/>
+            <TextBox x:Uid="wynikegaminu" HorizontalAlignment="Left" Margin="18,471,0,0" TextWrapping="Wrap" Text="Twoja ocena TT" VerticalAlignment="Top" Width="264" TextAlignment="Center"/>
+            <TextBox x:Name="pokazwynik" HorizontalAlignment="Left" Margin="18,511,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="135" Width="264" FontWeight="Bold" FontStyle="Italic" FontSize="80" TextAlignment="Center" Text=":)" IsReadOnly="True" IsHitTestVisible="False"/>
+            <TextBox x:Uid="opisegzaminu" HorizontalAlignment="Left" Margin="18,201,0,0" TextWrapping="Wrap" Text="info TT" VerticalAlignment="Top" Height="175" Width="264"/>
+            <TextBox x:Name="sl13" HorizontalAlignment="Left" Margin="844,336,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True" IsHitTestVisible="False" Background="Black" Foreground="White"/>
+            <TextBox x:Name="sl14" HorizontalAlignment="Left" Margin="844,381,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True" IsHitTestVisible="False" Background="Black" Foreground="White"/>
+            <TextBox x:Name="sl15" HorizontalAlignment="Left" Margin="844,426,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True" IsHitTestVisible="False" Background="Black" Foreground="White"/>
+            <TextBox x:Name="sl16" HorizontalAlignment="Left" Margin="844,471,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True" IsHitTestVisible="False" Background="Black" Foreground="White"/>
+            <TextBox x:Name="sl17" HorizontalAlignment="Left" Margin="844,516,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True" IsHitTestVisible="False" Background="Black" Foreground="White"/>
+            <TextBox x:Name="sl18" HorizontalAlignment="Left" Margin="844,561,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True" IsHitTestVisible="False" Background="Black" Foreground="White"/>
+            <TextBox x:Name="sl19" HorizontalAlignment="Left" Margin="844,606,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="250" IsReadOnly="True" IsHitTestVisible="False" Background="Black" Foreground="White"/>
+            <Button x:Uid="nowyegzamin" x:Name="wroc" Content="jeszcze raz TT" HorizontalAlignment="Left" Margin="844,700,0,0" VerticalAlignment="Top" Width="250" Click="Button_Click_3" Height="58" FontSize="14.667"/>
+            <TextBox x:Uid="egzaminTytul" HorizontalAlignment="Left" Margin="184,61,0,0" TextWrapping="Wrap" Text="egzaminTT" VerticalAlignment="Top" Width="964" Height="81" Background="Black" BorderBrush="Black" Foreground="White" IsReadOnly="True" IsHitTestVisible="False" FontSize="40"/>
+
+        </Grid>
+    </Viewbox>
+</Page>

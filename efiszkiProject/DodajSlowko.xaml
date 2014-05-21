@@ -1,0 +1,30 @@
+﻿<Page
+    x:Class="efiszkiProject.DodajSlowko"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:efiszkiProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Viewbox>
+        <Grid Height="768" Width="1366" Background="Black">
+            <TextBox x:Name="TextBoxDodajSlowkoPL" HorizontalAlignment="Left" Margin="229,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="408" RenderTransformOrigin="0.577,-2.713" Height="71" TextChanged="TextBoxDodajSlowkoPL_TextChanged"/>
+            <TextBox x:Name="TextBoxDodajSlowkoEN" HorizontalAlignment="Left" Margin="742,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="408" Height="71" TextChanged="TextBoxDodajSlowkoEN_TextChanged"/>
+            <TextBox x:Name="TextBoxDodajKontekst" HorizontalAlignment="Left" Margin="229,386,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="921" Height="67"/>
+            <TextBox x:Name="TextBoxDodajSlowkoPodpowiedz" HorizontalAlignment="Left" Margin="229,520,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="68" Width="921"/>
+            <Button x:Uid="dodajslowkobutton" x:Name="buttonDodajSlowko" Content="Dodaj Slowko TT" HorizontalAlignment="Left" Margin="539,627,0,0" VerticalAlignment="Top" Height="84" Width="301" Click="Button_Click_1"/>
+            <Button x:Name="DodajSlowkoEndButton" Content="Button" HorizontalAlignment="Left" Margin="1177,399,0,0" VerticalAlignment="Top" Style="{StaticResource BackButtonStyle}" Height="47" Width="57" RenderTransformOrigin="0.5,0.5" Click="DodajSlowkoEndButton_Click">
+                <Button.RenderTransform>
+                    <CompositeTransform Rotation="180"/>
+                </Button.RenderTransform>
+            </Button>
+            <TextBox x:Uid="slowkopl_dodaj" HorizontalAlignment="Left" Margin="229,176,0,0" TextWrapping="Wrap" Text="SlowkoplTT" VerticalAlignment="Top" Width="408" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" TextAlignment="Center" IsHitTestVisible="False" Height="46"/>
+            <TextBox x:Uid="slowkoen_dodaj" HorizontalAlignment="Left" Margin="742,176,0,0" TextWrapping="Wrap" Text="SlowkoenTT" VerticalAlignment="Top" Width="408" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" TextAlignment="Center" IsHitTestVisible="False" Height="46"/>
+            <TextBox x:Uid="kontekst_dodaj" HorizontalAlignment="Left" Margin="229,332,0,0" TextWrapping="Wrap" Text="kontekstTT" VerticalAlignment="Top" Width="921" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" TextAlignment="Center" IsHitTestVisible="False" Height="46"/>
+            <TextBox x:Uid="podpowiedz_dodaj" HorizontalAlignment="Left" Margin="229,474,0,0" TextWrapping="Wrap" Text="podpowiedzTT" VerticalAlignment="Top" Width="921" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" TextAlignment="Center" IsHitTestVisible="False" Height="46"/>
+            <TextBox x:Uid="dodajbazeTytul_dodajslowko" HorizontalAlignment="Left" Margin="184,61,0,0" TextWrapping="Wrap" Text="dodajbazeTT" VerticalAlignment="Top" Width="964" Height="81" Background="Black" BorderBrush="Black" Foreground="White" IsReadOnly="True" IsHitTestVisible="False" FontSize="40"/>
+
+        </Grid>
+    </Viewbox>
+</Page>

@@ -1,0 +1,47 @@
+﻿<Page
+    x:Class="efiszkiProject.ZarzadzanieBazami"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:efiszkiProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Viewbox>
+        <Grid Height="768" Width="1366" Background="Black">
+            <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="51" Width="49" Style="{StaticResource BackButtonStyle}" Click="Button_Click_1"/>
+            <Button x:Uid="buttondodajbaze" Content="&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;Doaj BazeTT&#xA;" HorizontalAlignment="Left" Margin="184,216,0,0" VerticalAlignment="Top" Height="156" Width="210" Click="Button_Click_2" Foreground="White">
+                <Button.Background>
+                    <ImageBrush ImageSource="Assets/dodajbaza.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Uid="buttonDodajSlowko" Content="Dodaj slowkoTT" HorizontalAlignment="Left" Margin="184,428,0,0" VerticalAlignment="Top" Height="156" Width="210" Click="Button_Click_3">
+                <Button.Background>
+                    <ImageBrush ImageSource="Assets/dodajslowko.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Uid="buttonimport" Content="import TT" HorizontalAlignment="Left" Margin="698,216,0,0" VerticalAlignment="Top" Width="210" Height="156" Click="Button_Click_7">
+                <Button.Background>
+                    <ImageBrush ImageSource="Assets/import.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Uid="buttoneksport" Content="eksport TT" HorizontalAlignment="Left" Margin="938,216,0,0" VerticalAlignment="Top" Width="210" Height="156" Click="Button_Click_8">
+                <Button.Background>
+                    <ImageBrush ImageSource="Assets/eksport.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Uid="buttonusunbaze" Content="Usun baze TT" HorizontalAlignment="Left" Margin="444,216,0,0" VerticalAlignment="Top" Height="156" Width="210" Click="Button_Click_4">
+                <Button.Background>
+                    <ImageBrush ImageSource="Assets/usunbaze.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Uid="buttondeleteword" Content="usun slowkoTT" HorizontalAlignment="Left" Margin="444,428,0,0" VerticalAlignment="Top" Height="156" Width="210" Click="Button_Click_5">
+                <Button.Background>
+                    <ImageBrush ImageSource="Assets/usunslowko.png"/>
+                </Button.Background>
+            </Button>
+            <TextBox x:Uid="zarzadzajbazamiTytul" HorizontalAlignment="Left" Margin="184,61,0,0" TextWrapping="Wrap" Text="tytulTT" VerticalAlignment="Top" Width="964" Height="81" Background="Black" BorderBrush="Black" Foreground="White" IsReadOnly="True" IsHitTestVisible="False" FontSize="40"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="938,428,0,0" VerticalAlignment="Top" Height="156" Width="210" Click="Button_Click_6"/>
+        </Grid>
+    </Viewbox>
+</Page>

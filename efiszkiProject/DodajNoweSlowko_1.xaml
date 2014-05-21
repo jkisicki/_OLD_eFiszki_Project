@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="efiszkiProject.DodajNoweSlowko_1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:efiszkiProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Viewbox>
+        <Grid Height="768" Width="1366" Background="Black">
+            <ComboBox x:Name="comboboxdostepnebazy" HorizontalAlignment="Left" Margin="350,342,0,0" VerticalAlignment="Top" Width="515" Height="59" SelectionChanged="comboboxdostepnebazy_SelectionChanged"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Style="{StaticResource BackButtonStyle}" Click="Button_Click_1"/>
+            <Button x:Name="buttondodajnoweslowkowybranabaza" Content="Button" HorizontalAlignment="Left" Margin="879.081,347.735,0,0" VerticalAlignment="Top" Style="{StaticResource BackButtonStyle}" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="47.991" Width="50.88" Click="Button_Click_2">
+                <Button.RenderTransform>
+                    <CompositeTransform Rotation="179.232"/>
+                </Button.RenderTransform>
+            </Button>
+            <TextBox x:Uid="dodajslowkoTytul" HorizontalAlignment="Left" Margin="184,61,0,0" TextWrapping="Wrap" Text="tytulTT" VerticalAlignment="Top" Width="964" Height="81" Background="Black" BorderBrush="Black" Foreground="White" IsReadOnly="True" IsHitTestVisible="False" FontSize="40"/>
+            <TextBox x:Uid="OgolneWybierzBaze" HorizontalAlignment="Left" Margin="350,310,0,0" TextWrapping="Wrap" Text="wybierzTT" VerticalAlignment="Top" Width="515" Background="Black" Foreground="White" TextAlignment="Center" IsReadOnly="True" BorderBrush="{x:Null}"/>
+
+        </Grid>
+    </Viewbox>
+</Page>

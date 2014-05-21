@@ -6,9 +6,44 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    <Page.Background>
+        <ImageBrush ImageSource="Assets/background.png"/>
+    </Page.Background>
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="LosujSlowko" x:Uid="LosujSlowko" HorizontalAlignment="Left" Margin="385,128,0,0" VerticalAlignment="Top" Height="89" Width="180" Content="To change"/>
+    <Viewbox x:Name="MainPageGrid" >
+        <Grid Height="768" Width="1366">
+            <Button x:Name="ButtonNaukaSlowek" x:Uid="ButtonNaukaSlowek" HorizontalAlignment="Left" Margin="60,437,0,0" VerticalAlignment="Top" Height="249" Width="250" Content="NaukaSlowek_TT" Click="LosujSlowko_Click" Foreground="White">
+                <Button.Background>
+                    <ImageBrush ImageSource="Assets/newnauka.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Uid="zarzadzajbazami" Content="zarzadzaj tt" HorizontalAlignment="Left" Margin="560,437,0,0" VerticalAlignment="Top" Height="249" Width="250" Click="Button_Click_1" Foreground="White">
+                <Button.Background>
+                    <ImageBrush ImageSource="Assets/newmanage.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Uid="buttonegzamin" Content="EgzaminTT" HorizontalAlignment="Left" Margin="310,437,0,0" VerticalAlignment="Top" Height="249" Width="250" Click="Button_Click_2" Foreground="#FFFFFCFC">
+                <Button.Background>
+                    <ImageBrush ImageSource="Assets/newexam.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Uid="buttongame" Content="Graj i ucz się TT" HorizontalAlignment="Left" Margin="810,437,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.55,0.421" Height="249" Width="250" Foreground="White" Click="Button_Click_3">
+                <Button.Background>
+                    <ImageBrush ImageSource="Assets/newgame.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Uid="buttontranslate" Content="Pomoz w tlumaczeniu TT" HorizontalAlignment="Left" Margin="1060,437,0,0" VerticalAlignment="Top" Width="250" Height="123" Foreground="White">
+                <Button.Background>
+                    <ImageBrush ImageSource="Assets/translate.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Uid="buttonabout" Content="O programie TT" HorizontalAlignment="Left" Margin="1060,563,0,0" VerticalAlignment="Top" Width="250" Height="123" Foreground="White">
+                <Button.Background>
+                    <ImageBrush ImageSource="Assets/newabout.png"/>
+                </Button.Background>
+            </Button>
+            <Image HorizontalAlignment="Left" Height="355" Margin="316,35,0,0" VerticalAlignment="Top" Width="744" Source="Assets/startlogo.png"/>
 
-    </Grid>
+        </Grid>
+    </Viewbox>
 </Page>

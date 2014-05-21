@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="efiszkiProject.DodajBaze"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:efiszkiProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Viewbox>
+        <Grid Height="768" Width="1366" Background="Black">
+            <TextBox x:Uid="dodajBazeWybierzBaze" HorizontalAlignment="Left" Margin="410,291,0,0" TextWrapping="Wrap" Text="Podaj nazweTT" VerticalAlignment="Top" Height="33" Width="535" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" IsReadOnly="True" TextAlignment="Center" IsHitTestVisible="False"/>
+            <TextBox x:Name="TextBoxNazwaNowejBazy" HorizontalAlignment="Left" Margin="410,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="63" Width="535" TextAlignment="Center" FontSize="36"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="941,335,0,0" VerticalAlignment="Top" Height="53" Width="66" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="White" Style="{StaticResource BackButtonStyle}" RenderTransformOrigin="0.5,0.5" Click="Button_Click_1">
+                <Button.RenderTransform>
+                    <CompositeTransform Rotation="180"/>
+                </Button.RenderTransform>
+            </Button>
+            <TextBox x:Uid="komunikatbazaistnieje" x:Name="textboxkomunikatistniejacabaza" HorizontalAlignment="Left" Margin="259,520,0,0" TextWrapping="Wrap" Text="taka baza istnieje TT&#xA;" VerticalAlignment="Top" Height="20" Width="176" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" IsReadOnly="True" IsHitTestVisible="False"/>
+            <TextBox x:Uid="komunikatnazwazastrzezona" x:Name="TextBoxKomunikatNazwaZastrzezona" HorizontalAlignment="Left" Margin="259,557,0,0" TextWrapping="Wrap" Text="Nazwa zastrzezona TT" VerticalAlignment="Top" Height="8" Width="193" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" IsReadOnly="True" IsHitTestVisible="False"/>
+            <TextBox x:Uid="komunikatzakrotkanazwa" x:Name="TextBoxZaKrotkaNazwa" HorizontalAlignment="Left" Margin="259,483,0,0" TextWrapping="Wrap" Text="za krotka nazwa TT" VerticalAlignment="Top" Height="31" Width="161" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="{x:Null}" IsReadOnly="True" IsHitTestVisible="False"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Style="{StaticResource BackButtonStyle}" Click="Button_Click_2"/>
+            <TextBox x:Uid="dodajbazeTytul" HorizontalAlignment="Left" Margin="184,61,0,0" TextWrapping="Wrap" Text="dodajbazeTT" VerticalAlignment="Top" Width="964" Height="81" Background="Black" BorderBrush="Black" Foreground="White" IsReadOnly="True" IsHitTestVisible="False" FontSize="40"/>
+
+        </Grid>
+    </Viewbox>
+</Page>

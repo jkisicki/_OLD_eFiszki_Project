@@ -117,7 +117,335 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="LosujSlowko.Content" xml:space="preserve">
-    <value>Random</value>
+  <data name="aktualnabaza.Text" xml:space="preserve">
+    <value>Currently selected category:</value>
+  </data>
+  <data name="ButtonLosuj.Content" xml:space="preserve">
+    <value>
+
+
+Random!</value>
+  </data>
+  <data name="ButtonNaukaSlowek.Content" xml:space="preserve">
+    <value>
+
+
+
+
+
+
+
+
+
+Random &amp; Guess</value>
+  </data>
+  <data name="kontekst.Text" xml:space="preserve">
+    <value>Context</value>
+  </data>
+  <data name="passa.Text" xml:space="preserve">
+    <value>Pass:</value>
+  </data>
+  <data name="Podpowiedz.Text" xml:space="preserve">
+    <value>Hint</value>
+  </data>
+  <data name="Pokazlitery.Text" xml:space="preserve">
+    <value>Show letter</value>
+  </data>
+  <data name="statystykiuzytkownika.Text" xml:space="preserve">
+    <value>User statistics:</value>
+  </data>
+  <data name="switchkontekst.Header" xml:space="preserve">
+    <value>Show contex</value>
+  </data>
+  <data name="switchpodpowiedz.Header" xml:space="preserve">
+    <value>Show hint</value>
+  </data>
+  <data name="Twojaodpowiedz.Text" xml:space="preserve">
+    <value>Your answer:</value>
+  </data>
+  <data name="Buttonsprawdz.Content" xml:space="preserve">
+    <value>Check</value>
+  </data>
+  <data name="iloscdobrychodpowiedzi.Text" xml:space="preserve">
+    <value>Number of correct answer:</value>
+  </data>
+  <data name="iloscodpowiedzi.Text" xml:space="preserve">
+    <value>Number of answer:</value>
+  </data>
+  <data name="procentodp.Text" xml:space="preserve">
+    <value>Percentage of good answers:</value>
+  </data>
+  <data name="statystykislowka.Text" xml:space="preserve">
+    <value>Word statistics:</value>
+  </data>
+  <data name="buttonDodajSlowko.Content" xml:space="preserve">
+    <value>
+
+
+
+
+
+Add new word</value>
+  </data>
+  <data name="komunikatbazaistnieje.Text" xml:space="preserve">
+    <value>This name of category is existing</value>
+  </data>
+  <data name="komunikatnazwazastrzezona.Text" xml:space="preserve">
+    <value>This name is reserved</value>
+  </data>
+  <data name="komunikatzakrotkanazwa.Text" xml:space="preserve">
+    <value>The name is to short</value>
+  </data>
+  <data name="dodajBazeWybierzBaze.Text" xml:space="preserve">
+    <value>Type the name of the new categories:</value>
+  </data>
+  <data name="buttondeleteword.Content" xml:space="preserve">
+    <value>
+
+
+
+
+
+Delete words</value>
+  </data>
+  <data name="buttondodajbaze.Content" xml:space="preserve">
+    <value>
+
+
+
+
+
+Add new category</value>
+  </data>
+  <data name="buttoneksport.Content" xml:space="preserve">
+    <value>
+
+
+
+
+
+Export category</value>
+  </data>
+  <data name="buttonimport.Content" xml:space="preserve">
+    <value>
+
+
+
+
+
+Import category</value>
+  </data>
+  <data name="buttonusunbaze.Content" xml:space="preserve">
+    <value>
+
+
+
+
+
+Delete category</value>
+  </data>
+  <data name="kontekst_dodaj.Text" xml:space="preserve">
+    <value>Add contex, for eg.:  'Mouse' in contex PC Mouse</value>
+  </data>
+  <data name="podpowiedz_dodaj.Text" xml:space="preserve">
+    <value>Add hint, for eg. for eg.: hint for 'Screen' -&gt; 'You watch movie on PC's s...' </value>
+  </data>
+  <data name="slowkoen_dodaj.Text" xml:space="preserve">
+    <value>Enter translation:</value>
+  </data>
+  <data name="slowkopl_dodaj.Text" xml:space="preserve">
+    <value>Enter a word in your language:</value>
+  </data>
+  <data name="zarzadzajbazami.Content" xml:space="preserve">
+    <value>
+
+
+
+
+
+
+
+
+
+Manage Your categories</value>
+  </data>
+  <data name="deletefrom.Text" xml:space="preserve">
+    <value>From</value>
+  </data>
+  <data name="deleteword.Text" xml:space="preserve">
+    <value>remove</value>
+  </data>
+  <data name="buttonegzamin.Content" xml:space="preserve">
+    <value>
+
+
+
+
+
+
+
+
+
+Exam</value>
+  </data>
+  <data name="buttongame.Content" xml:space="preserve">
+    <value>
+
+
+
+
+
+
+
+
+
+Play and Learn</value>
+  </data>
+  <data name="zarzadzajbazamiTytul.Text" xml:space="preserve">
+    <value>Manage Your categories</value>
+  </data>
+  <data name="buttonabout.Content" xml:space="preserve">
+    <value>
+
+
+
+About </value>
+  </data>
+  <data name="buttontranslate.Content" xml:space="preserve">
+    <value>
+
+
+
+Help us with translate</value>
+  </data>
+  <data name="Buttonzacznijegzamin.Content" xml:space="preserve">
+    <value>Start exam</value>
+  </data>
+  <data name="nowyegzamin.Content" xml:space="preserve">
+    <value>Start new exam</value>
+  </data>
+  <data name="opisegzaminu.Text" xml:space="preserve">
+    <value>- god answer in section one - 2 pkt,
+- god answer in section two - 1 pkt,
+- the total number of points - 30 pkt.
+- to pass the exam - 30% of points (9 pkt)</value>
+  </data>
+  <data name="wynikegaminu.Text" xml:space="preserve">
+    <value>Result:</value>
+  </data>
+  <data name="zakonczegzamin.Content" xml:space="preserve">
+    <value>End the exam</value>
+  </data>
+  <data name="dodajbazeTytul.Text" xml:space="preserve">
+    <value>Add new category</value>
+  </data>
+  <data name="egzaminTytul.Text" xml:space="preserve">
+    <value>Exam</value>
+  </data>
+  <data name="dodajbazeTytul_dodajslowko.Text" xml:space="preserve">
+    <value>Add new words to category</value>
+  </data>
+  <data name="dodajslowkoTytul.Text" xml:space="preserve">
+    <value>Add new words</value>
+  </data>
+  <data name="OgolneWybierzBaze.Text" xml:space="preserve">
+    <value>Select category:</value>
+  </data>
+  <data name="usunbazeTytul.Text" xml:space="preserve">
+    <value>Delete category</value>
+  </data>
+  <data name="usunslowkoTytul.Text" xml:space="preserve">
+    <value>Delete words</value>
+  </data>
+  <data name="gamesstandardlearning.Text" xml:space="preserve">
+    <value>Games - standard learning</value>
+  </data>
+  <data name="gamesTytul.Text" xml:space="preserve">
+    <value>Games</value>
+  </data>
+  <data name="gamesstandardlearning2start.Content" xml:space="preserve">
+    <value>Start learning</value>
+  </data>
+  <data name="gameswiecejgier.Text" xml:space="preserve">
+    <value>More games commin soon! </value>
+  </data>
+  <data name="egzamin1zamaloslowek.Text" xml:space="preserve">
+    <value>This category have not enough words. Minimum number of words is 25.</value>
+  </data>
+  <data name="nauka1zamaloslowek.Text" xml:space="preserve">
+    <value>This category have not enough words. Minimum number of words is 1.</value>
+  </data>
+  <data name="naukaslowek1infodynamicsave.Text" xml:space="preserve">
+    <value>Dynamic Save
+- (Default) ON: Your results are saved after each answer.
+- OFF: Your results are saved when you press "back button". It's better for slower computer (When "Random" and "Check answer" is working to slowly).
+Caution! If You close the program before saving result, all will be lost!</value>
+  </data>
+  <data name="naukaslowek1toglledynamicsave.Header" xml:space="preserve">
+    <value>Dynamic Save</value>
+  </data>
+  <data name="naukatytul.Text" xml:space="preserve">
+    <value>Random &amp; Guess</value>
+  </data>
+  <data name="dodajslowkobutton.Content" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="toggleentertocheck.Header" xml:space="preserve">
+    <value>Enter to check &amp; Random</value>
+  </data>
+  <data name="togglestatistic.Header" xml:space="preserve">
+    <value>Statistic</value>
+  </data>
+  <data name="naukaslowek1infoentertorandom.Text" xml:space="preserve">
+    <value>If enabled:
+- When type answer, press "Enter" to check and press "Enter" one more time to radom new words. It's better for physical keyboard.</value>
+  </data>
+  <data name="naukaslowek1infostatistic.Text" xml:space="preserve">
+    <value>- Enable/Disable statistic</value>
+  </data>
+  <data name="radiobuttonpolska.Content" xml:space="preserve">
+    <value>From 1 to 5</value>
+  </data>
+  <data name="radiobuttonprocenty.Content" xml:space="preserve">
+    <value>Percentages</value>
+  </data>
+  <data name="systemocenianiainfo.Text" xml:space="preserve">
+    <value>Rating system:</value>
+  </data>
+  <data name="gamesszubieniaca.Text" xml:space="preserve">
+    <value>Games - Gallows</value>
+  </data>
+  <data name="gamesszubienica3lose.Text" xml:space="preserve">
+    <value>You Lose :-(</value>
+  </data>
+  <data name="gamesszubienica3win.Text" xml:space="preserve">
+    <value>You Win!</value>
+  </data>
+  <data name="eksportautor.Text" xml:space="preserve">
+    <value>Author:</value>
+  </data>
+  <data name="eksportjezyk1.Text" xml:space="preserve">
+    <value>You language:</value>
+  </data>
+  <data name="eksportjezyk2.Text" xml:space="preserve">
+    <value>Translate to:</value>
+  </data>
+  <data name="eksportsendto.Text" xml:space="preserve">
+    <value>Send to:</value>
+  </data>
+  <data name="eksportsendtoauthor.Content" xml:space="preserve">
+    <value>Application author</value>
+  </data>
+  <data name="eksportsendtofriend.Content" xml:space="preserve">
+    <value>Friend</value>
+  </data>
+  <data name="eksporttytul.Text" xml:space="preserve">
+    <value>Export your category</value>
+  </data>
+  <data name="friendmeiltoenter.Text" xml:space="preserve">
+    <value>Please, enter a email addres</value>
+  </data>
+  <data name="togglesmartrandom.Header" xml:space="preserve">
+    <value>Smart random</value>
   </data>
 </root>

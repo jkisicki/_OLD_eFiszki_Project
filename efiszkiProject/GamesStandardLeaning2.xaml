@@ -1,0 +1,29 @@
+﻿<Page
+    x:Class="efiszkiProject.GamesStandardLeaning2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:efiszkiProject"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Viewbox>
+        <Grid Background="Black" Height="768" Width="1366">
+            <TextBox x:Name="StandatdLearningslowkoPL" HorizontalAlignment="Left" Margin="107,388,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="75" Width="547" TextAlignment="Center" FontSize="40" IsReadOnly="True" Background="Black" Foreground="White"/>
+            <TextBox x:Name="StandatdLearningslowkoEN" HorizontalAlignment="Left" Margin="699,388,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="75" Width="547" TextAlignment="Center" FontSize="40" IsReadOnly="True" Background="Black" Foreground="White"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Style="{StaticResource BackButtonStyle}" Width="54" Click="Button_Click_2"/>
+            <Button x:Name="gamespreviousbutton" Content="Button" HorizontalAlignment="Left" Margin="30.157,399.234,0,0" VerticalAlignment="Top" Style="{StaticResource BackButtonStyle}" RenderTransformOrigin="1.097,-0.355" Click="Button_Click_3" Height="52.381" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <Button.RenderTransform>
+                    <CompositeTransform Rotation="-1.027"/>
+                </Button.RenderTransform>
+            </Button>
+            <Button x:Name="gamesnextbutton" Content="Button" HorizontalAlignment="Left" Margin="1283.165,403.509,0,0" VerticalAlignment="Top" Style="{StaticResource BackButtonStyle}" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="Button_Click_4" Height="50.883">
+                <Button.RenderTransform>
+                    <CompositeTransform Rotation="180.762"/>
+                </Button.RenderTransform>
+            </Button>
+            <TextBox x:Uid="gamesstandardlearning" HorizontalAlignment="Left" Margin="184,61,0,0" TextWrapping="Wrap" Text="tytulTT" VerticalAlignment="Top" Width="964" Height="81" Background="Black" BorderBrush="Black" Foreground="White" IsReadOnly="True" IsHitTestVisible="False" FontSize="40"/>
+
+        </Grid>
+    </Viewbox>
+</Page>
