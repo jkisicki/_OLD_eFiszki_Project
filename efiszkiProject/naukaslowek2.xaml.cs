@@ -57,7 +57,11 @@ namespace efiszkiProject
             pressenter = naukaslowek1.pressenter;
             statistic = naukaslowek1.statistic;
             smartlearning = naukaslowek1.smartrandom;
-           // Debug.WriteLine(statistic);
+           Debug.WriteLine("statystyki: "+statistic);
+           Debug.WriteLine("enter to C&R:" + pressenter);
+           Debug.WriteLine("dynamic save: " + dynamicsave);
+           Debug.WriteLine("smart random: " + smartlearning);
+           Debug.WriteLine("-------------------------");
             if (statistic == false)
             {
                 naukabox1.IsEnabled = false;
@@ -139,6 +143,12 @@ namespace efiszkiProject
             var db = new SQLiteAsyncConnection(path);
             PobierzDaneBazy = await db.QueryAsync<UserDefaultDataBase>("Select * From UserDefaultDataBase");
 
+            Debug.WriteLine("Pobrano dane z bazy slowek");
+            foreach (var e in PobierzDaneBazy)
+            {
+                Debug.WriteLine("id: {0}, PL: {1}, EN: {2}, ilosc odp: {3}, ilosc pop odp: {4}, passa {5}", e.Id, e.SlowkoPl, e.SlowkoEn, e.IloscOdpowiedzi, e.IloscPoprawnychOdpowiedzi, e.passa);
+            }
+            Debug.WriteLine("-----------------------");
             var path2 = Windows.Storage.ApplicationData.Current.LocalFolder.Path + @"\AppData.sqlite";
             var db2 = new SQLiteAsyncConnection(path2);
             userinf = await db2.QueryAsync<UserInformation>("Select * from UserInformation Where Id = 1");
@@ -178,8 +188,11 @@ namespace efiszkiProject
 
                 Random rnd = new Random();
                 Wylosowanyindeks = rnd.Next(PobierzDaneBazy.Count);
+                Debug.WriteLine("Wylosowany indeks bazy to: " + Wylosowanyindeks);
 
                 WylosowanaPozycja = PobierzDaneBazy[Wylosowanyindeks].Id;
+                Debug.WriteLine("Jego ID to :" + WylosowanaPozycja);
+                Debug.WriteLine("------------------------");
 
                 slowkopl = PobierzDaneBazy[Wylosowanyindeks].SlowkoPl;
                 slowkoen = PobierzDaneBazy[Wylosowanyindeks].SlowkoEn;
@@ -236,7 +249,7 @@ namespace efiszkiProject
 
         private async void Sprawdz()
         {
-            ButtonSprawdz.IsEnabled = false;
+            
             String slowkoodpowiedz = TextBoxOdpowiedz.Text;
             slowkoodpowiedz = slowkoodpowiedz.ToLower();
             slowkoen = slowkoen.ToLower();
@@ -248,11 +261,12 @@ namespace efiszkiProject
 
             if (slowkoen.Equals(slowkoodpowiedz))
             {
-                //Debug.WriteLine("OK");
+                Debug.WriteLine("Poprawna odpowiedz");
                 TextBoxOdpowiedz.Background = new SolidColorBrush(Colors.GreenYellow);
                 ButtonLosuj.IsEnabled = true;
                 TextBoxOdpowiedz.IsReadOnly = true;
                 TextBoxOdpowiedz.Text = slowkoodpowiedz + " = " + slowkoen;
+                ButtonSprawdz.IsEnabled = false;
                 
 
                 if (statistic == true)
@@ -262,47 +276,56 @@ namespace efiszkiProject
                     PobierzDaneBazy[Wylosowanyindeks].IloscOdpowiedzi += 1;
                     PobierzDaneBazy[Wylosowanyindeks].IloscPoprawnychOdpowiedzi += 1;
 
+                    Debug.WriteLine("Zmiana passy dla slowka o ID "+PobierzDaneBazy[Wylosowanyindeks].Id );
+
                     if (PobierzDaneBazy[Wylosowanyindeks].passa > 5 & PobierzDaneBazy[Wylosowanyindeks].passa <= 10 & PobierzDaneBazy[Wylosowanyindeks].kategoria == 1)
                     {
                         PobierzDaneBazy[Wylosowanyindeks].kategoria = 2;
-                        Debug.WriteLine("kategoria zmieniona na 2");
+                        Debug.WriteLine("kategoria zmieniona na 2, poniewaz passa = " + PobierzDaneBazy[Wylosowanyindeks].passa);
                     }
                     else if (PobierzDaneBazy[Wylosowanyindeks].passa > 10 & PobierzDaneBazy[Wylosowanyindeks].kategoria == 2)
                     {
                         PobierzDaneBazy[Wylosowanyindeks].kategoria = 3;
-                        Debug.WriteLine("kategoria zmieniona na 3");
+                        Debug.WriteLine("kategoria zmieniona na 3, poniewaz passa = " + PobierzDaneBazy[Wylosowanyindeks].passa);
                     }
 
                     userinf[0].IloscDobrychOdpowiedzi += 1;
                     userinf[0].IloscOgolnychOdpowiedzi += 1;
                     userinf[0].passa += 1;
+                   
 
                     if (dynamicsave == true)
                     {
+                        Debug.WriteLine("Wywoluje zapisanie danych, poniewaz dynamic save ="+dynamicsave );
+                        Debug.WriteLine("-------------------------");
                         savedata();
-                        Debug.WriteLine("Dane Zapisane");
+                        
                     }
                 }
             }
             else
             {
+                Debug.WriteLine("Odpowiedz nieprawidlowa");
                 TextBoxOdpowiedz.Background = new SolidColorBrush(Colors.Red);
                 ButtonLosuj.IsEnabled = true;
                 TextBoxOdpowiedz.IsReadOnly = true;
                 TextBoxOdpowiedz.Text = slowkoodpowiedz + " !=! " + slowkoen;
+                ButtonSprawdz.IsEnabled = false;
+
                 if (statistic == true)
                 {
                     PobierzDaneBazy[Wylosowanyindeks].passa = 0;
                     PobierzDaneBazy[Wylosowanyindeks].IloscOdpowiedzi += 1;
                     PobierzDaneBazy[Wylosowanyindeks].kategoria = 1;
-                    Debug.WriteLine("Zmiana kategorii na 1");
+                   // Debug.WriteLine("Zmiana kategorii na 1, poniewaz passa = "+ PobierzDaneBazy[WylosowanaPozycja].passa.ToString());
                     userinf[0].IloscOgolnychOdpowiedzi += 1;
                     userinf[0].passa = 0;
 
 
                     if (dynamicsave == true)
                         {
-                            Debug.WriteLine("Zapisano dane");
+                            Debug.WriteLine("Wywoluje zapisanie danych, poniewaz dynamic save =" + dynamicsave);
+                            Debug.WriteLine("-------------------------");
                             savedata();
                         }
                 }
@@ -414,17 +437,33 @@ namespace efiszkiProject
 
         private async void savedata()
         {
+            Debug.WriteLine("wywolano zapis danych");
             string wybranabaza = getbaza();
             var path = Windows.Storage.ApplicationData.Current.LocalFolder.Path + @"\" + wybranabaza;
             var db = new SQLiteAsyncConnection(path);
+            Debug.WriteLine("Polaczono z " + wybranabaza);
 
             var path2 = Windows.Storage.ApplicationData.Current.LocalFolder.Path + @"\AppData.sqlite";
             var db2 = new SQLiteAsyncConnection(path2);
+            Debug.WriteLine("Polaczono z AppData");
 
-            var update = PobierzDaneBazy.First();
+            Debug.WriteLine("Update danych w bazie slowek:");
+            foreach (var e in PobierzDaneBazy)
+            {
+                Debug.WriteLine("id: {0}, PL: {1}, EN: {2}, ilosc odp: {3}, ilosc pop odp: {4}, passa {5}", e.Id, e.SlowkoPl, e.SlowkoEn, e.IloscOdpowiedzi, e.IloscPoprawnychOdpowiedzi, e.passa);
+            }
+            int licznik=0;
+            foreach (var element in PobierzDaneBazy)
+            {
+                Debug.WriteLine("zapisuje dla id: " + element.Id+ " o liczniku "+ licznik);
+                var update = PobierzDaneBazy.ElementAt(licznik);
+                await db.UpdateAsync(update);
+                licznik++;
+            }
+            
             var update2 = userinf.First();
 
-            await db.UpdateAsync(update);
+            
             await db2.UpdateAsync(update2);
         }
 
