@@ -98,27 +98,32 @@ namespace efiszkiProject
             foreach (var element in Query)
             {
                 indeksy.Add(element);
+                Debug.WriteLine("indeks: " + element);
             }
 
-            Debug.WriteLine("ilosc indeksow: "+indeksy.Count);
+            Debug.WriteLine("ilosc indeksow: " + indeksy.Count);
             if (indeksy.Count == 0)
             {
                 if (kat == 1)
                 {
                     kat = 2;
                     Debug.WriteLine("Nie ma kategori 1, wybieram kat.2");
+                    zwrocindeksy(kat);
                 }
                 else if (kat == 2)
                 {
                     kat = 3;
                     Debug.WriteLine("Nie ma kategori 2, wybieram kat 3");
+                    zwrocindeksy(kat);
                 }
                 else if (kat == 3)
                 {
                     Debug.WriteLine("Nie ma kategorii 3, wybieram kat 1");
                     kat = 1;
+                    zwrocindeksy(kat);
                 }
-                zwrocindeksy(kat);
+                
+
             }
             return indeksy;
 
@@ -167,154 +172,61 @@ namespace efiszkiProject
             SwitchPodpowiedz.IsOn = false;
             SwitchPodpowiedz.IsEnabled = true;
             TextBoxPodpowiedzLitery.Text = "";
-            
-            if (smartlearning == true & statistic == true)
-            {
-                Debug.WriteLine("losowanie nr. " + licznik_losowan);
-                if (licznik_losowan < 7)
-                {
-                    kategoria = 1;
-                    Debug.WriteLine("losowanie kategorii 1");
-                }
-                else if (licznik_losowan >= 7 & licznik_losowan < 10)
-                {
-                    kategoria = 2;
-                    Debug.WriteLine("losowanie kategorii 2");
-                }
-                else if (licznik_losowan == 10)
-                {
-                    Debug.WriteLine("losowanie kategorii 3");
-                    kategoria = 3;
-                    licznik_losowan = 0;
-                }
-                List<int> indeksy = zwrocindeksy(kategoria);
-                
-                foreach(int e in indeksy)
-                {
-                    Debug.WriteLine("ind: "+e);
-                }
-                licznik_losowan++;
+
+            if (smartlearning == true) { }
 
 
                 Random rnd = new Random();
-                Wylosowanyindeks = rnd.Next(indeksy.Count);
-                Debug.WriteLine("Wylosowana pozycja to" + Wylosowanyindeks);
-                int wylosowanyindeks2 = indeksy[Wylosowanyindeks];
-                Debug.WriteLine("Wartosc pozycji:" + wylosowanyindeks2);
-                
+                Wylosowanyindeks = rnd.Next(PobierzDaneBazy.Count);
+
+                WylosowanaPozycja = PobierzDaneBazy[Wylosowanyindeks].Id;
+
+                slowkopl = PobierzDaneBazy[Wylosowanyindeks].SlowkoPl;
+                slowkoen = PobierzDaneBazy[Wylosowanyindeks].SlowkoEn;
+                podpowiedz = PobierzDaneBazy[Wylosowanyindeks].Podpowiedz;
+                kontekst = PobierzDaneBazy[Wylosowanyindeks].Kontekst;
+                if (statistic == true)
+                {
+
+                    iloscodpowiedzi = PobierzDaneBazy[Wylosowanyindeks].IloscOdpowiedzi;
+                    iloscpoprawnychodpowiedzo = PobierzDaneBazy[Wylosowanyindeks].IloscPoprawnychOdpowiedzi;
+                    passa = PobierzDaneBazy[Wylosowanyindeks].passa;
+                }
+                //Debug.WriteLine(" {0} - {1} w kontekscie {2}, podpowiedz {3}", slowkopl, slowkoen, kontekst, podpowiedz );
+                TextBoxWylosowaneSlowko.Text = slowkopl;
+
+                if (SwitchKontekst.IsOn == true)
+                {
+                    TextBoxKontekst.Text = kontekst;
+                }
+                sliderpodpowiedz.Maximum = slowkoen.Length / 2;
+
+                if (statistic == true)
+                {
+                    slowkoiloscodpowiedzi.Text = iloscodpowiedzi.ToString();
+                    slowkoiloscpoprawnychodpowiedzi.Text = iloscpoprawnychodpowiedzo.ToString();
+                    slowkopassa.Text = passa.ToString();
+                    if (iloscodpowiedzi != 0)
+                    {
+                        slowkoprocent.Value = (double)iloscpoprawnychodpowiedzo / (double)iloscodpowiedzi * 100;
+                    }
 
 
-               
-
-
-
-                
-               
-            //    WylosowanaPozycja = PobierzDaneBazy[wylosowanyindeks2].Id;
-            //    slowkopl = PobierzDaneBazy[wylosowanyindeks2].SlowkoPl;
-            //    slowkoen = PobierzDaneBazy[wylosowanyindeks2].SlowkoEn;
-            //    podpowiedz = PobierzDaneBazy[wylosowanyindeks2].Podpowiedz;
-            //    kontekst = PobierzDaneBazy[wylosowanyindeks2].Kontekst;
-
-            //    if (statistic == true)
-            //    {
-
-            //        iloscodpowiedzi = PobierzDaneBazy[Wylosowanyindeks].IloscOdpowiedzi;
-            //        iloscpoprawnychodpowiedzo = PobierzDaneBazy[Wylosowanyindeks].IloscPoprawnychOdpowiedzi;
-            //        passa = PobierzDaneBazy[Wylosowanyindeks].passa;
-            //    }
-            //    //Debug.WriteLine(" {0} - {1} w kontekscie {2}, podpowiedz {3}", slowkopl, slowkoen, kontekst, podpowiedz );
-            //    TextBoxWylosowaneSlowko.Text = slowkopl;
-
-            //    if (SwitchKontekst.IsOn == true)
-            //    {
-            //        TextBoxKontekst.Text = kontekst;
-            //    }
-            //    sliderpodpowiedz.Maximum = slowkoen.Length / 2;
-
-            //    if (statistic == true)
-            //    {
-            //        slowkoiloscodpowiedzi.Text = iloscodpowiedzi.ToString();
-            //        slowkoiloscpoprawnychodpowiedzi.Text = iloscpoprawnychodpowiedzo.ToString();
-            //        slowkopassa.Text = passa.ToString();
-            //        if (iloscodpowiedzi != 0)
-            //        {
-            //            slowkoprocent.Value = (double)iloscpoprawnychodpowiedzo / (double)iloscodpowiedzi * 100;
-            //        }
-
-
-            //        foreach (var item in userinf)
-            //        {
-            //            userpassa = item.passa;
-            //            useriloscdobrychodpowiedzi = item.IloscDobrychOdpowiedzi;
-            //            useriloscodpowiedzi = item.IloscOgolnychOdpowiedzi;
-            //        }
-            //        textboxuserpassa.Text = userpassa.ToString();
-            //        textboxuseriloscodpowiedzi.Text = useriloscodpowiedzi.ToString();
-            //        textboxuseriloscdobrychodpowiedzi.Text = useriloscdobrychodpowiedzi.ToString();
-            //        if (useriloscodpowiedzi != 0)
-            //        {
-            //            userprocent.Value = (double)useriloscdobrychodpowiedzi / (double)useriloscodpowiedzi * 100;
-            //        }
-            //    }
-
-                
-                
-            //}
-            //else
-            //{
-
-            //    Random rnd = new Random();
-            //    Wylosowanyindeks = rnd.Next(PobierzDaneBazy.Count);
-
-            //    WylosowanaPozycja = PobierzDaneBazy[Wylosowanyindeks].Id;
-
-            //    slowkopl = PobierzDaneBazy[Wylosowanyindeks].SlowkoPl;
-            //    slowkoen = PobierzDaneBazy[Wylosowanyindeks].SlowkoEn;
-            //    podpowiedz = PobierzDaneBazy[Wylosowanyindeks].Podpowiedz;
-            //    kontekst = PobierzDaneBazy[Wylosowanyindeks].Kontekst;
-            //    if (statistic == true)
-            //    {
-
-            //        iloscodpowiedzi = PobierzDaneBazy[Wylosowanyindeks].IloscOdpowiedzi;
-            //        iloscpoprawnychodpowiedzo = PobierzDaneBazy[Wylosowanyindeks].IloscPoprawnychOdpowiedzi;
-            //        passa = PobierzDaneBazy[Wylosowanyindeks].passa;
-            //    }
-            //    //Debug.WriteLine(" {0} - {1} w kontekscie {2}, podpowiedz {3}", slowkopl, slowkoen, kontekst, podpowiedz );
-            //    TextBoxWylosowaneSlowko.Text = slowkopl;
-
-            //    if (SwitchKontekst.IsOn == true)
-            //    {
-            //        TextBoxKontekst.Text = kontekst;
-            //    }
-            //    sliderpodpowiedz.Maximum = slowkoen.Length / 2;
-
-            //    if (statistic == true)
-            //    {
-            //        slowkoiloscodpowiedzi.Text = iloscodpowiedzi.ToString();
-            //        slowkoiloscpoprawnychodpowiedzi.Text = iloscpoprawnychodpowiedzo.ToString();
-            //        slowkopassa.Text = passa.ToString();
-            //        if (iloscodpowiedzi != 0)
-            //        {
-            //            slowkoprocent.Value = (double)iloscpoprawnychodpowiedzo / (double)iloscodpowiedzi * 100;
-            //        }
-
-
-            //        foreach (var item in userinf)
-            //        {
-            //            userpassa = item.passa;
-            //            useriloscdobrychodpowiedzi = item.IloscDobrychOdpowiedzi;
-            //            useriloscodpowiedzi = item.IloscOgolnychOdpowiedzi;
-            //        }
-            //        textboxuserpassa.Text = userpassa.ToString();
-            //        textboxuseriloscodpowiedzi.Text = useriloscodpowiedzi.ToString();
-            //        textboxuseriloscdobrychodpowiedzi.Text = useriloscdobrychodpowiedzi.ToString();
-            //        if (useriloscodpowiedzi != 0)
-            //        {
-            //            userprocent.Value = (double)useriloscdobrychodpowiedzi / (double)useriloscodpowiedzi * 100;
-            //        }
-            //    }
-            }
+                    foreach (var item in userinf)
+                    {
+                        userpassa = item.passa;
+                        useriloscdobrychodpowiedzi = item.IloscDobrychOdpowiedzi;
+                        useriloscodpowiedzi = item.IloscOgolnychOdpowiedzi;
+                    }
+                    textboxuserpassa.Text = userpassa.ToString();
+                    textboxuseriloscodpowiedzi.Text = useriloscodpowiedzi.ToString();
+                    textboxuseriloscdobrychodpowiedzi.Text = useriloscdobrychodpowiedzi.ToString();
+                    if (useriloscodpowiedzi != 0)
+                    {
+                        userprocent.Value = (double)useriloscdobrychodpowiedzi / (double)useriloscodpowiedzi * 100;
+                    }
+                }
+            
         }
 
         private void ButtonLosuj_Click(object sender, RoutedEventArgs e)
@@ -368,6 +280,7 @@ namespace efiszkiProject
                     if (dynamicsave == true)
                     {
                         savedata();
+                        Debug.WriteLine("Dane Zapisane");
                     }
                 }
             }
@@ -389,6 +302,7 @@ namespace efiszkiProject
 
                     if (dynamicsave == true)
                         {
+                            Debug.WriteLine("Zapisano dane");
                             savedata();
                         }
                 }

@@ -64,7 +64,7 @@ namespace efiszkiProject
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(UsunSlowko));
+            //this.Frame.Navigate(typeof(UsunSlowko));
         }
 
         private async void Button_Click_6(object sender, RoutedEventArgs e)

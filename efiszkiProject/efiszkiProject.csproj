@@ -169,9 +169,6 @@
     <Compile Include="UsunBaze.xaml.cs">
       <DependentUpon>UsunBaze.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UsunSlowko.xaml.cs">
-      <DependentUpon>UsunSlowko.xaml</DependentUpon>
-    </Compile>
     <Compile Include="ZarzadzanieBazami.xaml.cs">
       <DependentUpon>ZarzadzanieBazami.xaml</DependentUpon>
     </Compile>
@@ -305,10 +302,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="UsunBaze.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="UsunSlowko.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

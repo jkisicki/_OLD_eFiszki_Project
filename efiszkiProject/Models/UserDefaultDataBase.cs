@@ -9,7 +9,7 @@ namespace efiszkiProject.Models
 {
     public class UserDefaultDataBase
     {
-        [SQLite.PrimaryKey]
+        [SQLite.PrimaryKey, SQLite.AutoIncrement]
         public int Id  { get; set; }
         public string SlowkoPl { get; set; }
         public string SlowkoEn { get; set; }
