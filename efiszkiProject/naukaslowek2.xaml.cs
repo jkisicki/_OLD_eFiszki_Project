@@ -183,9 +183,58 @@ namespace efiszkiProject
             SwitchPodpowiedz.IsEnabled = true;
             TextBoxPodpowiedzLitery.Text = "";
 
-            if (smartlearning == true) { }
+            if (smartlearning == true)
+            {
+                Debug.WriteLine("Smart random = true");
+                Debug.WriteLine("losowanie nr. " + licznik_losowan);
+                if (licznik_losowan < 7)
+                {
+                    kategoria = 1;
+                    Debug.WriteLine("losowanie kategorii 1");
+                }
+                else if (licznik_losowan >= 7 & licznik_losowan < 10)
+                {
+                    kategoria = 2;
+                    Debug.WriteLine("losowanie kategorii 2");
+                }
+                else if (licznik_losowan == 10)
+                {
+                    Debug.WriteLine("losowanie kategorii 3");
+                    kategoria = 3;
+                    licznik_losowan = 0;
+                }
+                List<int> indeksy = zwrocindeksy(kategoria);
 
 
+                //foreach(int e in indeksy)
+                //{
+                //    Debug.WriteLine("ind: "+e);
+                //}
+                licznik_losowan++;
+
+
+                Random rnd = new Random();
+                Wylosowanyindeks = rnd.Next(indeksy.Count);
+                Debug.WriteLine("Wylosowana pozycja to " + Wylosowanyindeks);
+                int wylosowanyindeks2 = indeksy[Wylosowanyindeks];
+                Debug.WriteLine("Wartosc pozycji:" + wylosowanyindeks2);
+
+                int n = 0;
+                foreach (var i in PobierzDaneBazy)
+                {
+                    if (i.Id == wylosowanyindeks2)
+                    {
+                        break;
+                    }
+                    n++;
+                }
+
+                Debug.WriteLine("To slowko znajduje sie na miejscu {0} w tablicy", n);
+                Wylosowanyindeks = n;
+
+            }
+            else
+            {
                 Random rnd = new Random();
                 Wylosowanyindeks = rnd.Next(PobierzDaneBazy.Count);
                 Debug.WriteLine("Wylosowany indeks bazy to: " + Wylosowanyindeks);
@@ -193,6 +242,7 @@ namespace efiszkiProject
                 WylosowanaPozycja = PobierzDaneBazy[Wylosowanyindeks].Id;
                 Debug.WriteLine("Jego ID to :" + WylosowanaPozycja);
                 Debug.WriteLine("------------------------");
+            }
 
                 slowkopl = PobierzDaneBazy[Wylosowanyindeks].SlowkoPl;
                 slowkoen = PobierzDaneBazy[Wylosowanyindeks].SlowkoEn;
