@@ -106,33 +106,8 @@ namespace efiszkiProject
             }
 
             Debug.WriteLine("ilosc indeksow: " + indeksy.Count);
-            if (indeksy.Count == 0)
-            {
-                if (kat == 1)
-                {
-                    kat = 2;
-                    Debug.WriteLine("Nie ma kategori 1, wybieram kat.2");
-                    zwrocindeksy(kat);
-                }
-                else if (kat == 2)
-                {
-                    kat = 3;
-                    Debug.WriteLine("Nie ma kategori 2, wybieram kat 3");
-                    zwrocindeksy(kat);
-                }
-                else if (kat == 3)
-                {
-                    Debug.WriteLine("Nie ma kategorii 3, wybieram kat 1");
-                    kat = 1;
-                    zwrocindeksy(kat);
-                }
-                
-
-            }
             return indeksy;
 
-
-            
         }
 
 
@@ -185,37 +160,91 @@ namespace efiszkiProject
 
             if (smartlearning == true)
             {
+                Debug.WriteLine("-------------------------");
                 Debug.WriteLine("Smart random = true");
                 Debug.WriteLine("losowanie nr. " + licznik_losowan);
-                if (licznik_losowan < 7)
+                List<int> indeksy = new List<int>();
+
+                var Query1 =
+                               from que in PobierzDaneBazy
+                               where (que.kategoria == 1)
+                               select que.Id;
+
+
+                var Query2 =
+                               from que in PobierzDaneBazy
+                               where (que.kategoria == 2)
+                               select que.Id;
+
+                var Query3 =
+                               from que in PobierzDaneBazy
+                               where (que.kategoria == 3)
+                               select que.Id;
+
+
+                Debug.WriteLine("jest {0} słowek kategori 1", Query1.Count());
+                Debug.WriteLine("jest {0} słowek kategori 2", Query2.Count());
+                Debug.WriteLine("jest {0} słowek kategori 3", Query3.Count());
+
+                if (licznik_losowan < 7 & Query1.Count()>0)
                 {
-                    kategoria = 1;
-                    Debug.WriteLine("losowanie kategorii 1");
+                    Debug.WriteLine("Losuje kat 1");
+                    indeksy = zwrocindeksy(1);
                 }
-                else if (licznik_losowan >= 7 & licznik_losowan < 10)
+                else if (licznik_losowan < 7 & Query1.Count() == 0 & Query2.Count() > 0)
                 {
-                    kategoria = 2;
-                    Debug.WriteLine("losowanie kategorii 2");
+                    Debug.WriteLine("kat 1 pusta, losuje kat 2");
+                    indeksy = zwrocindeksy(2);
                 }
-                else if (licznik_losowan == 10)
+                else if (licznik_losowan < 7 & Query1.Count() == 0 & Query2.Count() == 0 & Query3.Count() > 0)
                 {
-                    Debug.WriteLine("losowanie kategorii 3");
-                    kategoria = 3;
+                    Debug.WriteLine("kat 1 i 2 pusta, losuje kat 3");
+                    indeksy = zwrocindeksy(3);
+                }
+                else if (licznik_losowan >= 7 & licznik_losowan < 10 & Query2.Count() > 0)
+                {
+                    Debug.WriteLine("losuje kat 2");
+                    indeksy = zwrocindeksy(2);
+                }
+                else if (licznik_losowan >= 7 & licznik_losowan < 10 & Query2.Count() == 0 & Query3.Count() > 0)
+                {
+                    Debug.WriteLine("kat 2 pusta, losuje kat 3");
+                    indeksy = zwrocindeksy(3);
+                }
+                else if (licznik_losowan >= 7 & licznik_losowan < 10 & Query2.Count() == 0 & Query3.Count() == 0 & Query1.Count() > 0)
+                {
+                    Debug.WriteLine("kat 2 i 3 pusta, losuje kat 1");
+                    indeksy = zwrocindeksy(1);
+                }
+                else if (licznik_losowan == 10 & Query3.Count() > 0)
+                {
+                    Debug.WriteLine("losuje kat 3");
+                    indeksy = zwrocindeksy(3);
                     licznik_losowan = 0;
                 }
-                List<int> indeksy = zwrocindeksy(kategoria);
+                else if (licznik_losowan == 10 & Query3.Count() == 0 & Query1.Count() > 0)
+                {
+                    Debug.WriteLine("kat 3 pusta, losuje kat 1");
+                    indeksy = zwrocindeksy(1);
+                    licznik_losowan = 0;
+                }
+                else if (licznik_losowan == 10 & Query3.Count() == 0 & Query1.Count() == 0 & Query2.Count() > 0)
+                {
+                    Debug.WriteLine("kat 3 i 1 puste,losuje kat 2");
+                    indeksy = zwrocindeksy(2);
+                    licznik_losowan = 0;
+                }
 
-
-                //foreach(int e in indeksy)
-                //{
-                //    Debug.WriteLine("ind: "+e);
-                //}
+                foreach (int e in indeksy)
+                {
+                    Debug.WriteLine("id: " + e);
+                }
                 licznik_losowan++;
-
-
+                
                 Random rnd = new Random();
                 Wylosowanyindeks = rnd.Next(indeksy.Count);
                 Debug.WriteLine("Wylosowana pozycja to " + Wylosowanyindeks);
+
                 int wylosowanyindeks2 = indeksy[Wylosowanyindeks];
                 Debug.WriteLine("Wartosc pozycji:" + wylosowanyindeks2);
 
