@@ -185,6 +185,7 @@
     <Content Include="Assets\button.png" />
     <Content Include="Assets\dodajbaza.png" />
     <Content Include="Assets\dodajslowko.png" />
+    <Content Include="Assets\downloadmore.png" />
     <Content Include="Assets\egzamin.png" />
     <Content Include="Assets\eksport.png" />
     <Content Include="Assets\gry.png" />

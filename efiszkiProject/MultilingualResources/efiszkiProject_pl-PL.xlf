@@ -408,6 +408,22 @@ Caution! If You close the program before saving result, all will be lost!</targe
           <source>Smart random</source>
           <target state="new">Smart random</target>
         </trans-unit>
+        <trans-unit translate="yes" id="Resources\downloadmore\Content" xml:space="preserve">
+          <source>
+
+
+
+
+
+Download more!</source>
+          <target state="new">
+
+
+
+
+
+Download more!</target>
+        </trans-unit>
         <trans-unit translate="yes" id="Resources\eksportjezyk2\Text" xml:space="preserve">
           <source>Translate to:</source>
           <target state="new">Translate to:</target>

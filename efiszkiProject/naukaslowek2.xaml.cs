@@ -62,6 +62,7 @@ namespace efiszkiProject
            Debug.WriteLine("dynamic save: " + dynamicsave);
            Debug.WriteLine("smart random: " + smartlearning);
            Debug.WriteLine("-------------------------");
+
             if (statistic == false)
             {
                 naukabox1.IsEnabled = false;

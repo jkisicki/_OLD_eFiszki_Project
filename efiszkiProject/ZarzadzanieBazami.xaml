@@ -41,7 +41,11 @@
                 </Button.Background>
             </Button>
             <TextBox x:Uid="zarzadzajbazamiTytul" HorizontalAlignment="Left" Margin="184,61,0,0" TextWrapping="Wrap" Text="tytulTT" VerticalAlignment="Top" Width="964" Height="81" Background="Black" BorderBrush="Black" Foreground="White" IsReadOnly="True" IsHitTestVisible="False" FontSize="40"/>
-            <Button Content="Button" HorizontalAlignment="Left" Margin="938,428,0,0" VerticalAlignment="Top" Height="156" Width="210" Click="Button_Click_6"/>
+            <Button x:Uid="downloadmore" Content="Button" HorizontalAlignment="Left" Margin="938,428,0,0" VerticalAlignment="Top" Height="156" Width="210" Click="Button_Click_6">
+                <Button.Background>
+                    <ImageBrush ImageSource="Assets/downloadmore.png"/>
+                </Button.Background>
+            </Button>
         </Grid>
     </Viewbox>
 </Page>

@@ -448,4 +448,13 @@ Caution! If You close the program before saving result, all will be lost!</value
   <data name="togglesmartrandom.Header" xml:space="preserve">
     <value>Smart random</value>
   </data>
+  <data name="downloadmore.Content" xml:space="preserve">
+    <value>
+
+
+
+
+
+Download more!</value>
+  </data>
 </root>
