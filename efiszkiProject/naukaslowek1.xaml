@@ -19,12 +19,13 @@
             <TextBlock x:Name="egzamin1zamalokomunikat" x:Uid="nauka1zamaloslowek" HorizontalAlignment="Left" Margin="221,494,0,0" TextWrapping="Wrap" Text="tt" VerticalAlignment="Top" Height="29" Width="81" Foreground="{x:Null}" IsTapEnabled="False" IsHitTestVisible="False" Visibility="Collapsed"/>
             <TextBox x:Uid="naukatytul" HorizontalAlignment="Left" Margin="184,72,0,0" TextWrapping="Wrap" Text="tytulTT" VerticalAlignment="Top" Width="964" Height="81" Background="Black" BorderBrush="Black" Foreground="White" IsReadOnly="True" IsHitTestVisible="False" FontSize="40"/>
             <ToggleSwitch x:Uid="naukaslowek1toglledynamicsave" x:Name="toggledynamicsave" HorizontalAlignment="Left" Margin="759,416,0,0" VerticalAlignment="Top" FontSize="20" Width="219" Height="78" IsOn="True"/>
-            <TextBox x:Uid="naukaslowek1infodynamicsave" HorizontalAlignment="Left" Margin="722,494,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="230" Width="294" Foreground="White" Background="Black" BorderBrush="Black" IsReadOnly="True"/>
-            <ToggleSwitch x:Name="toggleentertocheck" x:Uid="toggleentertocheck" Header="" HorizontalAlignment="Left" Margin="1133,416,0,0" VerticalAlignment="Top" IsOn="True" FontSize="20"/>
+            <TextBox x:Uid="naukaslowek1infodynamicsave" HorizontalAlignment="Left" Margin="722,494,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="230" Width="273" Foreground="White" Background="Black" BorderBrush="Black" IsReadOnly="True"/>
+            <ToggleSwitch x:Name="toggleentertocheck" x:Uid="toggleentertocheck" Header="" HorizontalAlignment="Left" Margin="1105,416,0,0" VerticalAlignment="Top" IsOn="True" FontSize="20"/>
             <ToggleSwitch x:Name="togglestatistic" x:Uid="togglestatistic" Header="" HorizontalAlignment="Left" Margin="184,416,0,0" VerticalAlignment="Top" Toggled="togglestatistic_Toggled" FontSize="20"/>
-            <TextBox x:Uid="naukaslowek1infostatistic" HorizontalAlignment="Left" Margin="79,494,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="230" Width="383" Foreground="White" Background="Black" BorderBrush="Black" IsReadOnly="True"/>
-            <TextBox x:Uid="naukaslowek1infoentertorandom" HorizontalAlignment="Left" Margin="1069,494,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="230" Width="287" Foreground="White" Background="Black" BorderBrush="Black" IsReadOnly="True"/>
+            <TextBox x:Uid="naukaslowek1infosmartrandom" HorizontalAlignment="Left" Margin="449,494,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="230" Width="273" Foreground="White" Background="Black" BorderBrush="Black" IsReadOnly="True"/>
+            <TextBox x:Uid="naukaslowek1infoentertorandom" HorizontalAlignment="Left" Margin="1069,494,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="230" Width="251" Foreground="White" Background="Black" BorderBrush="Black" IsReadOnly="True"/>
             <ToggleSwitch x:Uid="togglesmartrandom" x:Name="togglesmartrandom" HorizontalAlignment="Left" Margin="476,416,0,0" VerticalAlignment="Top" FontSize="20" IsOn="True"/>
+            <TextBox x:Uid="naukaslowek1infostatistic" HorizontalAlignment="Left" Margin="147,494,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="230" Width="244" Foreground="White" Background="Black" BorderBrush="Black" IsReadOnly="True"/>
 
         </Grid>
     </Viewbox>

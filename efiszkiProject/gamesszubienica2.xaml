@@ -13,7 +13,7 @@
                 <RowDefinition Height="243*"/>
                 <RowDefinition Height="13*"/>
             </Grid.RowDefinitions>
-            <Button Content="Button" HorizontalAlignment="Left" Margin="10,0,0,670.533" VerticalAlignment="Bottom" Style="{StaticResource BackButtonStyle}" Click="Button_Click_1"/>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,670.533" VerticalAlignment="Bottom" Style="{StaticResource BackButtonStyle}" Click="Button_Click_1"/>
             <TextBox x:Uid="gamesszubieniaca" HorizontalAlignment="Left" Margin="184,61,0,0" TextWrapping="Wrap" Text="tytulTT" VerticalAlignment="Top" Width="964" Height="81" Background="Black" BorderBrush="Black" Foreground="White" IsReadOnly="True" IsHitTestVisible="False" FontSize="40"/>
             <Button x:Name="_1" Content="Q" HorizontalAlignment="Left" Margin="64,553,0,0" VerticalAlignment="Top" Height="56" Width="116" Click="Button_Click_2"/>
             <Button x:Name="_2" Content="W" HorizontalAlignment="Left" Margin="191,553,0,0" VerticalAlignment="Top" Height="56" Width="115" Click="_2_Click"/>
@@ -41,7 +41,7 @@
             <Button x:Name="_24" Content="B" HorizontalAlignment="Left" Margin="748,676,0,0" VerticalAlignment="Top" Height="56" Width="116" Grid.RowSpan="2" Click="_24_Click"/>
             <Button x:Name="_25" Content="N" HorizontalAlignment="Left" Margin="873,676,0,0" VerticalAlignment="Top" Height="56" Width="115" Grid.RowSpan="2" Click="_25_Click"/>
             <Button x:Name="_26" Content="M" HorizontalAlignment="Left" Margin="997,676,0,0" VerticalAlignment="Top" Height="56" Width="116" Grid.RowSpan="2" Click="_26_Click"/>
-            <TextBox x:Name="wylosowaneslowko" HorizontalAlignment="Left" Margin="438,463,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="51" Width="490" FontSize="24" TextAlignment="Center"/>
+            <TextBox x:Name="wylosowaneslowko" HorizontalAlignment="Left" Margin="438,463,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="51" Width="490" FontSize="24" TextAlignment="Center" IsReadOnly="True"/>
             <Image x:Name="szubienica" HorizontalAlignment="Left" Height="266" Margin="438,147,0,0" VerticalAlignment="Top" Width="490"/>
             <Popup/>
 

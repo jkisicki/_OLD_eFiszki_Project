@@ -9,7 +9,9 @@
 
     <Viewbox>
         <Grid Height="768" Width="1366" Background="Black">
-            <Button Content="Button" HorizontalAlignment="Left" Margin="0,0,0,720" VerticalAlignment="Bottom" Style="{StaticResource BackButtonStyle}" Click="Button_Click_1"/>
+            <Button HorizontalAlignment="Left" Margin="10,0,0,710" VerticalAlignment="Bottom" Style="{StaticResource BackButtonStyle}" Click="Button_Click_1" Height="48">
+                <Image Height="100" Width="100"/>
+            </Button>
             <ComboBox x:Name="comboboxdostepnebazy" HorizontalAlignment="Left" Margin="350,342,0,0" VerticalAlignment="Top" Width="515" Height="59" SelectionChanged="comboboxdostepnebazy_SelectionChanged"/>
             <TextBox x:Uid="OgolneWybierzBaze" HorizontalAlignment="Left" Margin="350,310,0,0" TextWrapping="Wrap" Text="wybierzTT" VerticalAlignment="Top" Width="515" Background="Black" Foreground="White" TextAlignment="Center" IsReadOnly="True" BorderBrush="{x:Null}"/>
             <Button x:Name="gamesstandardlearningnext" Content="Button" HorizontalAlignment="Left" Margin="879.081,347.735,0,0" VerticalAlignment="Top" Style="{StaticResource BackButtonStyle}" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Height="47.991" Width="50.88" Click="Button_Click_2">

@@ -328,7 +328,8 @@ Help us with translate</value>
     <value>- god answer in section one - 2 pkt,
 - god answer in section two - 1 pkt,
 - the total number of points - 30 pkt.
-- to pass the exam - 30% of points (9 pkt)</value>
+- to pass the exam - 30% of points (9 pkt)
+GOOD LUCK!</value>
   </data>
   <data name="wynikegaminu.Text" xml:space="preserve">
     <value>Result:</value>
@@ -456,5 +457,9 @@ Caution! If You close the program before saving result, all will be lost!</value
 
 
 Download more!</value>
+  </data>
+  <data name="naukaslowek1infosmartrandom.Text" xml:space="preserve">
+    <value>If enabled:
+Application will use a special algorithm - Smart Random. Algorithm will be random more times words, which user have problems . The study will now be even more effective!</value>
   </data>
 </root>

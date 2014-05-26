@@ -58,6 +58,7 @@ namespace efiszkiProject
             {
                 MessageDialog dialog = new MessageDialog("Error");
                 await dialog.ShowAsync();
+                this.Frame.Navigate(typeof(gamesszubienica1));
             }
             else
             {

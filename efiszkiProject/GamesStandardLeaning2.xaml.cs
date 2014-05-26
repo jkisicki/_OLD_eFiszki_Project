@@ -65,6 +65,7 @@ namespace efiszkiProject
             {
                 MessageDialog dialog = new MessageDialog("Error");
                 await dialog.ShowAsync();
+                this.Frame.Navigate(typeof(GamesStandardLeaning1));
             }
             else
             {

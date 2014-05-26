@@ -288,11 +288,13 @@ Help us with translate</target>
           <source>- god answer in section one - 2 pkt,
 - god answer in section two - 1 pkt,
 - the total number of points - 30 pkt.
-- to pass the exam - 30% of points (9 pkt)</source>
+- to pass the exam - 30% of points (9 pkt)
+GOOD LUCK!</source>
           <target state="new">- god answer in section one - 2 pkt,
 - god answer in section two - 1 pkt,
 - the total number of points - 30 pkt.
-- to pass the exam - 30% of points (9 pkt)</target>
+- to pass the exam - 30% of points (9 pkt)
+GOOD LUCK!</target>
         </trans-unit>
         <trans-unit translate="yes" id="Resources\wynikegaminu\Text" xml:space="preserve">
           <source>Result:</source>
@@ -423,6 +425,12 @@ Download more!</source>
 
 
 Download more!</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\naukaslowek1infosmartrandom\Text" xml:space="preserve">
+          <source>If enabled:
+Application will use a special algorithm - Smart Random. Algorithm will be random more times words, which user have problems . The study will now be even more effective!</source>
+          <target state="new">If enabled:
+Application will use a special algorithm - Smart Random. Algorithm will be random more times words, which user have problems . The study will now be even more effective!</target>
         </trans-unit>
         <trans-unit translate="yes" id="Resources\eksportjezyk2\Text" xml:space="preserve">
           <source>Translate to:</source>

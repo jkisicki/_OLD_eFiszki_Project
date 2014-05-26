@@ -9,10 +9,10 @@
 
     <Viewbox>
         <Grid Height="768" Width="1366" Background="Black">
-            <TextBox x:Name="TextBoxDodajSlowkoPL" HorizontalAlignment="Left" Margin="229,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="408" RenderTransformOrigin="0.577,-2.713" Height="71" TextChanged="TextBoxDodajSlowkoPL_TextChanged"/>
-            <TextBox x:Name="TextBoxDodajSlowkoEN" HorizontalAlignment="Left" Margin="742,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="408" Height="71" TextChanged="TextBoxDodajSlowkoEN_TextChanged"/>
-            <TextBox x:Name="TextBoxDodajKontekst" HorizontalAlignment="Left" Margin="229,386,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="921" Height="67"/>
-            <TextBox x:Name="TextBoxDodajSlowkoPodpowiedz" HorizontalAlignment="Left" Margin="229,520,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="68" Width="921"/>
+            <TextBox x:Name="TextBoxDodajSlowkoPL" MaxLength="30" HorizontalAlignment="Left" Margin="58,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="630" RenderTransformOrigin="0.577,-2.713" Height="71" TextChanged="TextBoxDodajSlowkoPL_TextChanged" FontSize="36" TextAlignment="Center"/>
+            <TextBox x:Name="TextBoxDodajSlowkoEN" MaxLength="30" HorizontalAlignment="Left" Margin="693,235,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="623" Height="71" TextChanged="TextBoxDodajSlowkoEN_TextChanged" FontSize="36" TextAlignment="Center"/>
+            <TextBox x:Name="TextBoxDodajKontekst" MaxLength="35" HorizontalAlignment="Left" Margin="229,386,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="921" Height="67" FontSize="36" TextAlignment="Center"/>
+            <TextBox x:Name="TextBoxDodajSlowkoPodpowiedz" MaxLength="35" HorizontalAlignment="Left" Margin="229,520,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="68" Width="921" FontSize="36" TextAlignment="Center"/>
             <Button x:Uid="dodajslowkobutton" x:Name="buttonDodajSlowko" Content="Dodaj Slowko TT" HorizontalAlignment="Left" Margin="539,627,0,0" VerticalAlignment="Top" Height="84" Width="301" Click="Button_Click_1"/>
             <Button x:Name="DodajSlowkoEndButton" Content="Button" HorizontalAlignment="Left" Margin="1177,399,0,0" VerticalAlignment="Top" Style="{StaticResource BackButtonStyle}" Height="47" Width="57" RenderTransformOrigin="0.5,0.5" Click="DodajSlowkoEndButton_Click">
                 <Button.RenderTransform>

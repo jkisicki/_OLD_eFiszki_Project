@@ -10,7 +10,7 @@
     <Viewbox>
         <Grid Height="768" Width="1366" Background="Black">
             <TextBox x:Uid="dodajBazeWybierzBaze" HorizontalAlignment="Left" Margin="410,291,0,0" TextWrapping="Wrap" Text="Podaj nazweTT" VerticalAlignment="Top" Height="33" Width="535" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" IsReadOnly="True" TextAlignment="Center" IsHitTestVisible="False"/>
-            <TextBox x:Name="TextBoxNazwaNowejBazy" HorizontalAlignment="Left" Margin="410,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="63" Width="535" TextAlignment="Center" FontSize="36"/>
+            <TextBox x:Name="TextBoxNazwaNowejBazy" MaxLength="20" HorizontalAlignment="Left" Margin="410,329,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="63" Width="535" TextAlignment="Center" FontSize="36"/>
             <Button Content="Button" HorizontalAlignment="Left" Margin="941,335,0,0" VerticalAlignment="Top" Height="53" Width="66" Foreground="{x:Null}" BorderBrush="{x:Null}" Background="White" Style="{StaticResource BackButtonStyle}" RenderTransformOrigin="0.5,0.5" Click="Button_Click_1">
                 <Button.RenderTransform>
                     <CompositeTransform Rotation="180"/>
