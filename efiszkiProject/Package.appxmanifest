@@ -3,7 +3,7 @@
   <Identity Name="90651b4a-96c3-4536-8a66-af5bea2151a4" Publisher="CN=Jozef" Version="0.1.0.0" />
   <Properties>
     <DisplayName>efiszkiProject</DisplayName>
-    <PublisherDisplayName>Jozef</PublisherDisplayName>
+    <PublisherDisplayName>Jozef Kisicki "RapidDev"</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -15,9 +15,9 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="efiszkiProject.App">
-      <VisualElements DisplayName="e-Fiszki" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="efiszkiProject" ForegroundText="light" BackgroundColor="#464646">
+      <VisualElements DisplayName="e-Fiszki" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="e-Fiszki Project - simple learning new words! Use a smart random to more effective learning!" ForegroundText="light" BackgroundColor="#000000">
         <DefaultTile ShowName="allLogos" WideLogo="Assets\widelogof.png" />
-        <SplashScreen Image="Assets\startlogo.png" BackgroundColor="#000000" />
+        <SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#000000" />
         <InitialRotationPreference>
           <Rotation Preference="landscape" />
         </InitialRotationPreference>
