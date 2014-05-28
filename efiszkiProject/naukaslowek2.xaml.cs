@@ -360,12 +360,12 @@ namespace efiszkiProject
 
                    // Debug.WriteLine("Zmiana passy dla slowka o ID "+PobierzDaneBazy[Wylosowanyindeks].Id );
 
-                    if (PobierzDaneBazy[Wylosowanyindeks].passa > 5 & PobierzDaneBazy[Wylosowanyindeks].passa <= 10 & PobierzDaneBazy[Wylosowanyindeks].kategoria == 1)
+                    if (PobierzDaneBazy[Wylosowanyindeks].passa > 3 & PobierzDaneBazy[Wylosowanyindeks].passa <= 6 & PobierzDaneBazy[Wylosowanyindeks].kategoria == 1)
                     {
                         PobierzDaneBazy[Wylosowanyindeks].kategoria = 2;
                         Debug.WriteLine("kategoria zmieniona na 2, poniewaz passa = " + PobierzDaneBazy[Wylosowanyindeks].passa);
                     }
-                    else if (PobierzDaneBazy[Wylosowanyindeks].passa > 10 & PobierzDaneBazy[Wylosowanyindeks].kategoria == 2)
+                    else if (PobierzDaneBazy[Wylosowanyindeks].passa > 6 & PobierzDaneBazy[Wylosowanyindeks].kategoria == 2)
                     {
                         PobierzDaneBazy[Wylosowanyindeks].kategoria = 3;
                         Debug.WriteLine("kategoria zmieniona na 3, poniewaz passa = " + PobierzDaneBazy[Wylosowanyindeks].passa);

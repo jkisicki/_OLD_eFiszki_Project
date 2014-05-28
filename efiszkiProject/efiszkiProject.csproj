@@ -107,6 +107,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="about.xaml.cs">
+      <DependentUpon>about.xaml</DependentUpon>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -169,6 +172,7 @@
     <Compile Include="UsunBaze.xaml.cs">
       <DependentUpon>UsunBaze.xaml</DependentUpon>
     </Compile>
+    <Compile Include="UsunSlowko.xaml.cs" />
     <Compile Include="ZarzadzanieBazami.xaml.cs">
       <DependentUpon>ZarzadzanieBazami.xaml</DependentUpon>
     </Compile>
@@ -198,6 +202,7 @@
     <Content Include="Assets\newgame.png" />
     <Content Include="Assets\newmanage.png" />
     <Content Include="Assets\newnauka.png" />
+    <Content Include="Assets\prof.jpg" />
     <Content Include="Assets\SmallLogo.png" />
     <Content Include="Assets\SplashScreen.png" />
     <Content Include="Assets\startlogo.png" />
@@ -230,6 +235,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="about.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Common\StandardStyles.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -305,6 +314,10 @@
     <Page Include="UsunBaze.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UsunSlowko.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="ZarzadzanieBazami.xaml">
       <SubType>Designer</SubType>

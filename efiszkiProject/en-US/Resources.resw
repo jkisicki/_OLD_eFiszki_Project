@@ -462,4 +462,7 @@ Download more!</value>
     <value>If enabled:
 Application will use a special algorithm - Smart Random. Algorithm will be random more times words, which user have problems . The study will now be even more effective!</value>
   </data>
+  <data name="aboutme.Text" xml:space="preserve">
+    <value>About me</value>
+  </data>
 </root>

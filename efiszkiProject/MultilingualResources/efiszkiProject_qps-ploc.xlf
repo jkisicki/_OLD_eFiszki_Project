@@ -432,6 +432,10 @@ Application will use a special algorithm - Smart Random. Algorithm will be rando
           <target state="new">If enabled:
 Application will use a special algorithm - Smart Random. Algorithm will be random more times words, which user have problems . The study will now be even more effective!</target>
         </trans-unit>
+        <trans-unit translate="yes" id="Resources\aboutme\Text" xml:space="preserve">
+          <source>About me</source>
+          <target state="new">About me</target>
+        </trans-unit>
         <trans-unit translate="yes" id="Resources\eksportjezyk2\Text" xml:space="preserve">
           <source>Translate to:</source>
           <target state="new">Translate to:</target>

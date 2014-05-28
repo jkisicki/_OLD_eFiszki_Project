@@ -11,7 +11,7 @@
     </Page.Background>
 
     <Viewbox x:Name="MainPageGrid" >
-        <Grid Height="768" Width="1366">
+        <Grid Height="768" Width="1366" >
             <Button x:Name="ButtonNaukaSlowek" x:Uid="ButtonNaukaSlowek" HorizontalAlignment="Left" Margin="60,437,0,0" VerticalAlignment="Top" Height="249" Width="250" Content="NaukaSlowek_TT" Click="LosujSlowko_Click" Foreground="White">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/newnauka.png"/>
@@ -37,7 +37,7 @@
                     <ImageBrush ImageSource="Assets/translate.png"/>
                 </Button.Background>
             </Button>
-            <Button x:Uid="buttonabout" Content="O programie TT" HorizontalAlignment="Left" Margin="1060,563,0,0" VerticalAlignment="Top" Width="250" Height="123" Foreground="White">
+            <Button x:Uid="buttonabout" Content="O programie TT" HorizontalAlignment="Left" Margin="1060,563,0,0" VerticalAlignment="Top" Width="250" Height="123" Foreground="White" Click="Button_Click_4">
                 <Button.Background>
                     <ImageBrush ImageSource="Assets/newabout.png"/>
                 </Button.Background>
