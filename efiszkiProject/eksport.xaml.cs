@@ -34,6 +34,7 @@ namespace efiszkiProject
             getinfo();
             friendmeil.IsEnabled = false;
             radio1.IsChecked = true;
+            radio2.IsEnabled = false;
            
         }
 
@@ -141,9 +142,6 @@ namespace efiszkiProject
         {
             friendmeil.IsEnabled = false;
         }
-
-       
-
 
 
         
