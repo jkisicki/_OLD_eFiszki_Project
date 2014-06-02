@@ -411,20 +411,8 @@ Caution! If You close the program before saving result, all will be lost!</targe
           <target state="new">Smart random</target>
         </trans-unit>
         <trans-unit translate="yes" id="Resources\downloadmore\Content" xml:space="preserve">
-          <source>
-
-
-
-
-
-Download more!</source>
-          <target state="new">
-
-
-
-
-
-Download more!</target>
+          <source>Visit webpage!</source>
+          <target state="new">Visit webpage!</target>
         </trans-unit>
         <trans-unit translate="yes" id="Resources\naukaslowek1infosmartrandom\Text" xml:space="preserve">
           <source>If enabled:

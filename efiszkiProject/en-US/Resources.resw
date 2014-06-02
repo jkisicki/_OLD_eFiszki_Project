@@ -450,13 +450,7 @@ Caution! If You close the program before saving result, all will be lost!</value
     <value>Smart random</value>
   </data>
   <data name="downloadmore.Content" xml:space="preserve">
-    <value>
-
-
-
-
-
-Download more!</value>
+    <value>Visit webpage!</value>
   </data>
   <data name="naukaslowek1infosmartrandom.Text" xml:space="preserve">
     <value>If enabled:

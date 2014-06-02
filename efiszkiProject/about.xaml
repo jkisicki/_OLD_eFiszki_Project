@@ -12,6 +12,11 @@
             <TextBox x:Uid="aboutme" HorizontalAlignment="Left" Margin="492,171,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Height="519" Width="718" IsReadOnly="True" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="White" FontSize="18" TextAlignment="Center"/>
             <Image HorizontalAlignment="Left" Height="519" Margin="56,171,0,0" VerticalAlignment="Top" Width="388" Source="Assets/prof.jpg" DoubleTapped="Image_DoubleTapped_1"/>
             <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Style="{StaticResource BackButtonStyle}" Click="Button_Click_1"/>
+            <Button x:Uid="downloadmore" Content="import TT" HorizontalAlignment="Left" Margin="234,171,0,0" VerticalAlignment="Top" Width="210" Height="156" Click="Button_Click_7" Foreground="Black" BorderBrush="#FF857F7F">
+                <Button.Background>
+                    <ImageBrush ImageSource="Assets/visit.png"/>
+                </Button.Background>
+            </Button>
 
         </Grid>
     </Viewbox>

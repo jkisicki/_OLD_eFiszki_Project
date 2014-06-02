@@ -226,6 +226,8 @@
     <Content Include="Assets\ustawienia.png" />
     <Content Include="Assets\usunbaze.png" />
     <Content Include="Assets\usunslowko.png" />
+    <Content Include="Assets\visit.png" />
+    <Content Include="Assets\visitwebsite.png" />
     <Content Include="Assets\widelogof.png" />
     <Content Include="Assets\Losujizgaduj.png" />
     <Content Include="efisz new logo.jpg" />

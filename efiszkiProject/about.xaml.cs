@@ -47,5 +47,12 @@ namespace efiszkiProject
         {
             this.Frame.Navigate(typeof(MainPage));
         }
+
+        private async void Button_Click_7(object sender, RoutedEventArgs e)
+        {
+            string uriToLaunch = @"http://jkisicki.github.io/";
+            var uri = new Uri(uriToLaunch);
+            await Windows.System.Launcher.LaunchUriAsync(uri);
+        }
     }
 }
