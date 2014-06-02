@@ -248,7 +248,7 @@ Delete category</value>
     <value>Add contex, for eg.:  'Mouse' in contex PC Mouse</value>
   </data>
   <data name="podpowiedz_dodaj.Text" xml:space="preserve">
-    <value>Add hint, for eg. for eg.: hint for 'Screen' -&gt; 'You watch movie on PC's s...' </value>
+    <value>Add hint, for eg. for eg.: hint for 'Screen' -&gt; 'You watch movie on s...' </value>
   </data>
   <data name="slowkoen_dodaj.Text" xml:space="preserve">
     <value>Enter translation:</value>
@@ -458,5 +458,17 @@ Application will use a special algorithm - Smart Random. Algorithm will be rando
   </data>
   <data name="aboutme.Text" xml:space="preserve">
     <value>About me</value>
+  </data>
+  <data name="standardlearning.Content" xml:space="preserve">
+    <value>
+
+
+
+
+
+Standard Learning</value>
+  </data>
+  <data name="szubienica.Content" xml:space="preserve">
+    <value>Gallow</value>
   </data>
 </root>

@@ -42,7 +42,7 @@
             <Button x:Name="_25" Content="N" HorizontalAlignment="Left" Margin="873,676,0,0" VerticalAlignment="Top" Height="56" Width="115" Grid.RowSpan="2" Click="_25_Click"/>
             <Button x:Name="_26" Content="M" HorizontalAlignment="Left" Margin="997,676,0,0" VerticalAlignment="Top" Height="56" Width="116" Grid.RowSpan="2" Click="_26_Click"/>
             <TextBox x:Name="wylosowaneslowko" HorizontalAlignment="Left" Margin="438,463,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="51" Width="490" FontSize="24" TextAlignment="Center" IsReadOnly="True"/>
-            <Image x:Name="szubienica" HorizontalAlignment="Left" Height="266" Margin="438,147,0,0" VerticalAlignment="Top" Width="490"/>
+            <Image x:Name="szubienica" HorizontalAlignment="Left" Height="266" Margin="564,147,0,0" VerticalAlignment="Top" Width="490"/>
             <Popup/>
 
         </Grid>

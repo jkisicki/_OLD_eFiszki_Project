@@ -202,9 +202,11 @@
     <Content Include="Assets\newgame.png" />
     <Content Include="Assets\newmanage.png" />
     <Content Include="Assets\newnauka.png" />
+    <Content Include="Assets\pilowbutton.png" />
     <Content Include="Assets\prof.jpg" />
     <Content Include="Assets\SmallLogo.png" />
     <Content Include="Assets\SplashScreen.png" />
+    <Content Include="Assets\standardlearning.png" />
     <Content Include="Assets\startlogo.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Assets\szub1.png" />

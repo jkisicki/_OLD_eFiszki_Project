@@ -11,9 +11,17 @@
         <Grid Height="768" Width="1366" Background="Black">
             <Button Content="Button" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Style="{StaticResource BackButtonStyle}" Click="Button_Click_1"/>
             <TextBox x:Uid="gamesTytul" HorizontalAlignment="Left" Margin="184,61,0,0" TextWrapping="Wrap" Text="tytulTT" VerticalAlignment="Top" Width="964" Height="81" Background="Black" BorderBrush="Black" Foreground="White" IsReadOnly="True" IsHitTestVisible="False" FontSize="40"/>
-            <Button Content="Standard learning" HorizontalAlignment="Left" Margin="184,216,0,0" VerticalAlignment="Top" Height="156" Width="210" Foreground="White" Background="{x:Null}" Click="Button_Click_2"/>
+            <Button x:Uid="standardlearning" HorizontalAlignment="Left" Margin="184,216,0,0" VerticalAlignment="Top" Height="156" Width="210" Foreground="White" Click="Button_Click_2">
+                <Button.Background>
+                    <ImageBrush ImageSource="Assets/standardlearning.png"/>
+                </Button.Background>
+            </Button>
             <TextBox x:Uid="gameswiecejgier" HorizontalAlignment="Left" Margin="184,428,0,0" TextWrapping="Wrap" Text="wiecejgierTT" VerticalAlignment="Top" Width="964" Height="81" Background="Black" BorderBrush="Black" Foreground="White" IsReadOnly="True" IsHitTestVisible="False" FontSize="30" TextAlignment="Center"/>
-            <Button Content="szubienica&#xD;&#xA;" HorizontalAlignment="Left" Margin="419,216,0,0" VerticalAlignment="Top" Height="156" Width="210" Click="Button_Click_3"/>
+            <Button x:Uid="szubienica" HorizontalAlignment="Left" Margin="419,216,0,0" VerticalAlignment="Top" Height="156" Width="210" Click="Button_Click_3">
+                <Button.Background>
+                    <ImageBrush ImageSource="Assets/pilowbutton.png"/>
+                </Button.Background>
+            </Button>
 
         </Grid>
     </Viewbox>

@@ -424,6 +424,38 @@ Application will use a special algorithm - Smart Random. Algorithm will be rando
           <source>About me</source>
           <target state="new">About me</target>
         </trans-unit>
+        <trans-unit translate="yes" id="Resources\standardlearning\Content" xml:space="preserve">
+          <source>
+
+
+
+
+
+Standard Learning</source>
+          <target state="new">
+
+
+
+
+
+Standard Learning</target>
+        </trans-unit>
+        <trans-unit translate="yes" id="Resources\szubienica\Content" xml:space="preserve">
+          <source>
+
+
+
+
+
+Pillow</source>
+          <target state="new">
+
+
+
+
+
+Pillow</target>
+        </trans-unit>
         <trans-unit translate="yes" id="Resources\eksportjezyk2\Text" xml:space="preserve">
           <source>Translate to:</source>
           <target state="new">Translate to:</target>
